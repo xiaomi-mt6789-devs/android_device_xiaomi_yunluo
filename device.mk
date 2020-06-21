@@ -327,5 +327,8 @@ PRODUCT_SOONG_NAMESPACES += \
 	hardware/mediatek \
 	hardware/xiaomi
 
+# Add vendor log tags
+include $(LOCAL_PATH)/configs/props/vendor_log_tags.mk
+
 # Inherit our proprietary vendor
 $(call inherit-product, vendor/xiaomi/yunluo/yunluo-vendor.mk)
