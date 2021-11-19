@@ -278,7 +278,8 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-	FrameworksResOverlayYunluo
+	FrameworksResOverlayYunluo \
+    SettingsResOverlayYunluo
 
 # Init files
 PRODUCT_PACKAGES += \
