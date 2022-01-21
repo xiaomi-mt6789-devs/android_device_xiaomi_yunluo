@@ -26,6 +26,9 @@ wifi.tethering.interface=ap0
 vendor.rild.libargs=-d /dev/ttyC0
 vendor.rild.libpath=mtk-ril.so
 
+# Dexopt
+dalvik.vm.dex2oat64.enabled=true
+
 # Power
 ro.mtk_perf_fast_start_win=1
 ro.mtk_perf_response_time=1
