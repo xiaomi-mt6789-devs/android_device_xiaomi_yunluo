@@ -85,6 +85,9 @@ function blob_fixup() {
         vendor/lib64/mt6789/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
+        vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc)
+            sed -i '/vts/Q' "$2"
+            ;;
     esac
 }
 
