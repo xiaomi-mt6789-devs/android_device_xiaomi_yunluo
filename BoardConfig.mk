@@ -16,6 +16,10 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a76
 TARGET_CPU_VARIANT_RUNTIME := cortex-a76
 
+# Force any prefer32 targets to be compiled as 64 bit.
+FORCE_MULTILIB_FIRST_ON_DEVICE := true
+
+# Build the 32 bit targets
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-2a
 TARGET_2ND_CPU_ABI := armeabi-v7a
