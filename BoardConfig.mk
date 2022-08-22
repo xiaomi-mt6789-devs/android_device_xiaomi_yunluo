@@ -154,6 +154,7 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Properties
 TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/props/system.prop
+TARGET_SYSTEM_EXT_PROP += $(CONFIGS_PATH)/props/system_ext.prop
 TARGET_VENDOR_PROP += $(CONFIGS_PATH)/props/vendor.prop
 
 # Wifi
