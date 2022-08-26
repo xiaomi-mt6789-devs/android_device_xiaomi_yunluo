@@ -108,6 +108,7 @@ ro.surface_flinger.set_touch_timer_ms=3000
 vendor.hbm.enable=false
 ro.minui.default_rotation=ROTATION_DOWN
 debug.sf.enable_transaction_tracing=false
+ro.surface_flinger.uclamp.min=130
 
 # DRM
 drm.service.enabled=true
