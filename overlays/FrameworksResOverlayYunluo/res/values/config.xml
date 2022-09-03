@@ -437,4 +437,7 @@
               * The device must be provisioned with HDCP keys (for protected content).
          -->
     <bool name="config_enableWifiDisplay">true</bool>
+
+    <!-- Determines whether the shell features all run on another thread. -->
+    <bool name="config_enableShellMainThread">true</bool>
 </resources>
