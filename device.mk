@@ -180,6 +180,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service
 
+# Memtrack
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack-service.yunluo
+
 # Other common
 PRODUCT_PACKAGES += \
 	libflatbuffers-cpp.vendor \
