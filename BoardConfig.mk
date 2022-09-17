@@ -135,6 +135,9 @@ TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/touch_dev/gesture_double_tap_state"
+
 # Recovery
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
