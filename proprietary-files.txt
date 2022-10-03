@@ -54,9 +54,6 @@
 -vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 -vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 
-# Audio (SoundFX)
--vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
-
 # Audio Configurations
 -vendor/etc/AudioLog_dynamic.xml
 -vendor/etc/audio_param/AudioParamOptions_mgvi.xml
@@ -999,3 +996,4 @@ vendor/thh/ta/isee_model.json
 -vendor/etc/init/wlan_assistant.rc
 -vendor/lib64/libconnfem.so
 -vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
