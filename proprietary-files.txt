@@ -519,7 +519,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/libMtkOmxCore.so
 -vendor/lib/libMtkOmxGsmDec.so
 -vendor/lib/libMtkOmxMp3Dec.so
--vendor/lib/libmtkperf_client_vendor.so
 -vendor/lib/libmtkproperty.so
 -vendor/lib/libmtkrillog.so
 -vendor/lib/libmtkshifter_vendor.so
@@ -546,7 +545,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/libmtknetcap.so
 -vendor/lib64/libmtknetutils.so
 -vendor/lib64/libMtkOmxCore.so
--vendor/lib64/libmtkperf_client_vendor.so
 -vendor/lib64/libmtkproperty.so
 -vendor/lib64/libmtkrillog.so
 -vendor/lib64/libmtkrilutils.so

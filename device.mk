@@ -198,6 +198,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service.example
 
+# Dummy mtkperf lib
+PRODUCT_PACKAGES += \
+    libmtkperf_client_vendor \
+    libmtkperf_client
+
 # RenderScript
 PRODUCT_PACKAGES += \
 	android.hardware.renderscript@1.0-impl
