@@ -498,7 +498,6 @@ vendor/lib/egl/egl.cfg
 -vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
 -vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
 -vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
--vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service;NODEPS
 -vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 -vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 -vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
@@ -507,8 +506,6 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/init/memtrack-mediatek.rc
 -vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
 -vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
--vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
--vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 -vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 -vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
 -vendor/lib/libmtkares.so
@@ -534,7 +531,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so;NOCHECK
 -vendor/lib64/hw/sensors.mediatek.V2.0.so
 -vendor/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so
--vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
 -vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 -vendor/lib64/libmtk-fusion-ril-prop-vsim.so
 -vendor/lib64/libmtk-ril.so
@@ -709,9 +705,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so
 -vendor/lib64/mt6789/libneuron_adapter_mgvi.so
 -vendor/lib64/mt6789/libneuron_runtime.5.so
-
-# Power-Hardware
--vendor/lib64/hw/power.default.so:vendor/lib64/hw/power.mt6789.so
 
 # Sensors
 -vendor/lib64/sensors.touch.detect.so
@@ -958,7 +951,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/libmisoundcrossfade.so
 -vendor/lib/libmiXmlParser.so
 -vendor/lib/libmml.so
--vendor/lib/libmmprofile.so
 -vendor/lib/libmnetlink_v104.so
 -vendor/lib/libmp3dec_mtk.so
 -vendor/lib/libmp4enc_sa.ca7.so
@@ -985,9 +977,7 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/libnvram.so
 -vendor/lib/libnvram_sec.so
 -vendor/lib/libpaperMode.so
--vendor/lib/libperfctl_vendor.so
 -vendor/lib/libpixelflinger.so
--vendor/lib/libpowerhalwrap_vendor.so
 -vendor/lib/libpower_timer.so
 -vendor/lib/libpqframework.so
 -vendor/lib/librcs_interface.so
@@ -1152,7 +1142,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/libmiXmlParser.so
 -vendor/lib64/libmmagent.so
 -vendor/lib64/libmml.so
--vendor/lib64/libmmprofile.so
 -vendor/lib64/libmnetlink_v104.so
 -vendor/lib64/libmorpho.photosolid.so
 -vendor/lib64/libmorpho_Lowlight.so
@@ -1182,10 +1171,7 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/libnvram.so
 -vendor/lib64/libnvram_sec.so
 -vendor/lib64/libpaperMode.so
--vendor/lib64/libperfctl_vendor.so
 -vendor/lib64/libpixelflinger.so
--vendor/lib64/libpowerhal.so
--vendor/lib64/libpowerhalwrap_vendor.so
 -vendor/lib64/libpower_timer.so
 -vendor/lib64/libpqframework.so
 -vendor/lib64/libratconfig.so
