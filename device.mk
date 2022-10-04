@@ -203,6 +203,9 @@ PRODUCT_PACKAGES += \
     libmtkperf_client_vendor \
     libmtkperf_client
 
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+
 # RenderScript
 PRODUCT_PACKAGES += \
 	android.hardware.renderscript@1.0-impl
