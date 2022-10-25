@@ -1,0 +1,3 @@
+# Thermals
+/(vendor|system/vendor)/bin/mi_thermald u:object_r:mi_thermald_exec:s0
+
