@@ -59,6 +59,8 @@ function blob_fixup() {
     case "${1}" in
         vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod)
             "${PATCHELF}" --remove-needed "android.hardware.security.keymint-V1-ndk_platform.so" "${2}"
+            "${PATCHELF}" --replace-needed "android.hardware.secureclock-V1-ndk_platform.so" "android.hardware.secureclock-V1-ndk.so" "${2}"
+            "${PATCHELF}" --replace-needed "android.hardware.sharedsecret-V1-ndk_platform.so" "android.hardware.sharedsecret-V1-ndk.so" "${2}"
             ;;
         vendor/lib*/libspeech_enh_lib.so|\
         vendor/lib64/libwifi-hal-mtk.so|\
@@ -82,7 +84,13 @@ function blob_fixup() {
             ;;
         vendor/lib64/mt6789/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
-        ;;
+            ;;
+        vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
+            "${PATCHELF}" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "${2}"
+            ;;
+        vendor/bin/hw/android.hardware.memtrack-service.mediatek)
+            "${PATCHELF}" --replace-needed "android.hardware.memtrack-V1-ndk_platform.so" "android.hardware.memtrack-V1-ndk.so" "${2}"
+            ;;
     esac
 }
 
