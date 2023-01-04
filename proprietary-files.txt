@@ -448,6 +448,9 @@ vendor/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1e_1.bin
 vendor/firmware/WMT_SOC.cfg
 
+# FM Radio
+-system_ext/lib64/libfmjni.so:system/lib64/libfmjni.so
+
 # Gatekeeper
 -vendor/lib64/hw/gatekeeper.beanpod.so
 
