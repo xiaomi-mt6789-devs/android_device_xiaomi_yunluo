@@ -6,6 +6,7 @@
 
 DEVICE_PATH := device/xiaomi/yunluo
 KERNEL_PATH := device/xiaomi/yunluo-kernel
+CONFIGS_PATH := $(DEVICE_PATH)/configs
 
 # Architecture
 TARGET_ARCH := arm64
@@ -128,6 +129,11 @@ BOARD_AVB_BOOT_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_BOOT_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_BOOT_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 3
+
+# VINTF
+DEVICE_MANIFEST_FILE := $(CONFIGS_PATH)/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(CONFIGS_PATH)/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(CONFIGS_PATH)/vintf/framework_compatibility_matrix.xml
 
 # VNDK
 BOARD_VNDK_VERSION := current

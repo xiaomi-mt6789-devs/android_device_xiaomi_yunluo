@@ -1,0 +1,163 @@
+<compatibility-matrix version="4.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.aee</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IAee</name>
+            <instance>AEE</instance>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.apmonitor</name>
+        <version>2.0</version>
+        <interface>
+            <name>IApmService</name>
+            <instance>apm_hidl_service</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.atci</name>
+        <version>1.0</version>
+        <interface>
+            <name>IAtcid</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.bluetooth.audio</name>
+        <version>2.0-2</version>
+        <interface>
+            <name>IBluetoothAudioProvidersFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.camera.atms</name>
+        <version>1.0</version>
+        <interface>
+            <name>IATMs</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.camera.bgservice</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IBGService</name>
+            <instance>internal/0</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.camera.isphal</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IISPModule</name>
+            <instance>internal/0</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.composer_ext</name>
+        <version>1.0</version>
+        <interface>
+            <name>IComposerExt</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.dmc</name>
+        <version>1.0-2</version>
+        <interface>
+            <name>IDmcService</name>
+            <instance>dmc_hidl_service</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.engineermode</name>
+        <version>1.0-3</version>
+        <interface>
+            <name>IEmd</name>
+            <instance>EmHidlServer</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.keymaster_attestation</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IKeymasterDevice</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.log</name>
+        <version>1.0</version>
+        <interface>
+            <name>ILog</name>
+            <instance>ATMWiFiHidlServer</instance>
+            <instance>ConnsysFWHidlServer</instance>
+            <instance>LoggerHidlServer</instance>
+            <instance>MobileLogHidlServer</instance>
+            <instance>ModemLogHidlServer</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.mmagent</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IMMAgent</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.mms</name>
+        <version>1.0-6</version>
+        <interface>
+            <name>IMms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.mtkpower</name>
+        <version>1.0-2</version>
+        <interface>
+            <name>IMtkPerf</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IMtkPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.netdagent</name>
+        <version>1.0</version>
+        <interface>
+            <name>INetdagent</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.nvram</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>INvram</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.pq</name>
+        <version>2.0-15</version>
+        <interface>
+            <name>IPictureQuality</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.mtdservice</name>
+        <version>1.0-2</version>
+        <interface>
+            <name>IMTService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
