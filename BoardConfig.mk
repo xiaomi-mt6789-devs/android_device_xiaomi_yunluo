@@ -132,5 +132,8 @@ BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 3
 # VNDK
 BOARD_VNDK_VERSION := current
 
+# SELinux
+BOARD_BOOTCONFIG += androidboot.selinux=permissive
+
 # Inherit the proprietary version
 include vendor/xiaomi/yunluo/BoardConfigVendor.mk
