@@ -47,5 +47,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
+# Init files
+PRODUCT_PACKAGES += \
+	fstab.mt6789_vendor_ramdisk
+
 # Inherit our proprietary vendor
 $(call inherit-product, vendor/xiaomi/yunluo/yunluo-vendor.mk)
