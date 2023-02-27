@@ -1,0 +1,107 @@
+//
+// Copyright (C) 2023 LineageOS
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+sh_binary {
+    name: "init.insmod.sh",
+    src: "bin/init.insmod.sh",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.insmod.mt6789.cfg",
+    src: "etc/init.insmod.mt6789.cfg",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.cgroup.rc",
+    src: "etc/init/hw/init.cgroup.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.charge_logger.rc",
+    src: "etc/init/hw/init.charge_logger.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.connectivity.common.rc",
+    src: "etc/init/hw/init.connectivity.common.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.connectivity.rc",
+    src: "etc/init/hw/init.connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.mi_thermald.rc",
+    src: "etc/init/hw/init.mi_thermald.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.mt6789.rc",
+    src: "etc/init/hw/init.mt6789.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.mt6789.usb.rc",
+    src: "etc/init/hw/init.mt6789.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.mtkgki.rc",
+    src: "etc/init/hw/init.mtkgki.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.project.rc",
+    src: "etc/init/hw/init.project.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.sensor_2_0.rc",
+    src: "etc/init/hw/init.sensor_2_0.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init_connectivity.rc",
+    src: "etc/init/hw/init_connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "fstab.mt6789",
+    src: "etc/fstab.mt6789",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "ueventd.mt6789.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.mt6789.rc",
+    vendor: true
+}

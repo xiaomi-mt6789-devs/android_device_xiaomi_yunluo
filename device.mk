@@ -49,6 +49,22 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Init files
 PRODUCT_PACKAGES += \
+	init.insmod.sh \
+	init.insmod.mt6789.cfg \
+	init.cgroup.rc \
+	init.charge_logger.rc \
+	init.connectivity.common.rc \
+	init.connectivity.rc \
+	init.mi_thermald.rc \
+	init.mt6789.rc \
+	init.mt6789.usb.rc \
+	init.mtkgki.rc \
+	init.project.rc \
+	init.sensor_2_0.rc \
+	init_connectivity.rc \
+	fstab.mt6789 \
+	ueventd.mt6789.rc \
+	fstab.mt6789 \
 	fstab.mt6789_vendor_ramdisk
 
 # Inherit our proprietary vendor
