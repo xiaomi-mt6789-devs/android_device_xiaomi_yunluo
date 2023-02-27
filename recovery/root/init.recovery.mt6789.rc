@@ -1,0 +1,8 @@
+on init
+    setprop sys.usb.configfs 1
+    setprop sys.usb.controller "musb-hdrc"
+    setprop sys.usb.ffs.aio_compat 0
+
+on fs
+    wait /dev/block/platform/bootdevice/
+    symlink /dev/block/platform/bootdevice /dev/block/bootdevice

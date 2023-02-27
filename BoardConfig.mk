@@ -97,5 +97,11 @@ BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := erofs
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Recovery
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6789
+TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
+TARGET_USERIMAGES_USE_F2FS := true
+
 # Inherit the proprietary version
 include vendor/xiaomi/yunluo/BoardConfigVendor.mk
