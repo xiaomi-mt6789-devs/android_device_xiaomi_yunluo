@@ -4,10 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-	$(LOCAL_PATH)
-
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
@@ -47,6 +43,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
+# Boot control HAL
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.2-mtkimpl.recovery
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
@@ -62,10 +62,14 @@ PRODUCT_PACKAGES += \
 	init.project.rc \
 	init.sensor_2_0.rc \
 	init_connectivity.rc \
-	fstab.mt6789 \
 	ueventd.mt6789.rc \
 	fstab.mt6789 \
 	fstab.mt6789_vendor_ramdisk
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+	hardware/mediatek \
+	$(LOCAL_PATH)
 
 # Inherit our proprietary vendor
 $(call inherit-product, vendor/xiaomi/yunluo/yunluo-vendor.mk)
