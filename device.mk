@@ -166,6 +166,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hardware.soundtrigger@2.3-impl
 
+# Thermal
+PRODUCT_PACKAGES += \
+	android.hardware.thermal@1.0.vendor:64 \
+	android.hardware.thermal@2.0.vendor:64 \
+	android.hardware.thermal@1.0-impl:64
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
