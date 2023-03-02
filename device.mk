@@ -88,6 +88,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hardware.drm-service.clearkey
 
+# FastbootD
+PRODUCT_PACKAGES += \
+    fastbootd \
+    android.hardware.fastboot@1.1-impl-mock
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
