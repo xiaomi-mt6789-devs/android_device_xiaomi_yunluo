@@ -156,6 +156,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hardware.renderscript@1.0-impl
 
+# Sensors
+PRODUCT_PACKAGES += \
+	android.frameworks.sensorservice@1.0.vendor:64 \
+	android.hardware.sensors-service.multihal \
+	libsensorndkbridge
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
