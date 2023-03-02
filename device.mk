@@ -134,6 +134,10 @@ PRODUCT_PACKAGES += \
 	libsfplugin_ccodec_utils.vendor \
 	libavservices_minijail.vendor
 
+# Media (OMX)
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
