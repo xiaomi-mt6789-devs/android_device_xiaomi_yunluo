@@ -76,6 +76,14 @@ PRODUCT_PACKAGES += \
 	libhwc2onfbadapter \
 	libdrm.vendor
 
+# DRM
+PRODUCT_PACKAGES += \
+	android.hardware.drm@1.0.vendor:64 \
+	android.hardware.drm@1.1.vendor:64 \
+	android.hardware.drm@1.2.vendor:64 \
+	android.hardware.drm@1.3.vendor:64 \
+	android.hardware.drm@1.4.vendor:64 \
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
