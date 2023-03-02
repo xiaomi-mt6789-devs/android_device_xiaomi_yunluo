@@ -162,6 +162,10 @@ PRODUCT_PACKAGES += \
 	android.hardware.sensors-service.multihal \
 	libsensorndkbridge
 
+# Soundtrigger
+PRODUCT_PACKAGES += \
+	android.hardware.soundtrigger@2.3-impl
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
