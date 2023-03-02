@@ -56,6 +56,19 @@ PRODUCT_PACKAGES += \
 	android.hardware.boot@1.2-mtkimpl \
     android.hardware.boot@1.2-mtkimpl.recovery
 
+# Camera
+PRODUCT_PACKAGES += \
+	android.hardware.camera.common@1.0.vendor:64 \
+	android.hardware.camera.device@1.0.vendor:64 \
+	android.hardware.camera.device@3.2.vendor:64 \
+	android.hardware.camera.device@3.3.vendor:64 \
+	android.hardware.camera.device@3.4.vendor:64 \
+	android.hardware.camera.device@3.5.vendor:64 \
+	android.hardware.camera.device@3.6.vendor:64 \
+	android.hardware.camera.provider@2.4.vendor:64 \
+	android.hardware.camera.provider@2.5.vendor:64 \
+	android.hardware.camera.provider@2.6.vendor:64 \
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
