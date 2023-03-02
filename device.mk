@@ -69,6 +69,13 @@ PRODUCT_PACKAGES += \
 	android.hardware.camera.provider@2.5.vendor:64 \
 	android.hardware.camera.provider@2.6.vendor:64 \
 
+# Display
+PRODUCT_PACKAGES += \
+	android.hardware.graphics.composer@2.3-service \
+	libhwc2on1adapter \
+	libhwc2onfbadapter \
+	libdrm.vendor
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
