@@ -111,6 +111,11 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-impl.recovery
 
+# HIDL
+PRODUCT_PACKAGES += \
+	libhidltransport.vendor \
+	libhwbinder.vendor
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
