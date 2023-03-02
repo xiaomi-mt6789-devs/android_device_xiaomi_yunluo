@@ -98,6 +98,13 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl:64 \
     android.hardware.gatekeeper@1.0-service
 
+# Keymaster / Keymint
+PRODUCT_PACKAGES += \
+	libkeymaster_messages.vendor \
+	libkeymaster_portable.vendor \
+	libkeymint.vendor \
+	libpuresoftkeymasterdevice.vendor
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
