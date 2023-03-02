@@ -64,7 +64,11 @@ PRODUCT_PACKAGES += \
 	init_connectivity.rc \
 	ueventd.mt6789.rc \
 	fstab.mt6789 \
-	fstab.mt6789_vendor_ramdisk
+
+# Audio Configuration
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
