@@ -172,6 +172,15 @@ PRODUCT_PACKAGES += \
 	android.hardware.thermal@2.0.vendor:64 \
 	android.hardware.thermal@1.0-impl:64
 
+# USB
+PRODUCT_PACKAGES += \
+	android.hardware.usb.gadget@1.0.vendor:64 \
+	android.hardware.usb.gadget@1.1.vendor:64 \
+	android.hardware.usb@1.0.vendor:64 \
+	android.hardware.usb@1.1.vendor:64 \
+	android.hardware.usb@1.2.vendor:64 \
+	android.hardware.usb@1.3.vendor:64
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
