@@ -105,6 +105,12 @@ PRODUCT_PACKAGES += \
 	libkeymint.vendor \
 	libpuresoftkeymasterdevice.vendor
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-service \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-impl.recovery
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
