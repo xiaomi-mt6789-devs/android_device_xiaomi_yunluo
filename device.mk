@@ -93,6 +93,11 @@ PRODUCT_PACKAGES += \
     fastbootd \
     android.hardware.fastboot@1.1-impl-mock
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl:64 \
+    android.hardware.gatekeeper@1.0-service
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
