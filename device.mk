@@ -116,6 +116,10 @@ PRODUCT_PACKAGES += \
 	libhidltransport.vendor \
 	libhwbinder.vendor
 
+# Lights
+PRODUCT_PACKAGES += \
+	android.hardware.light-service.xiaomi
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
@@ -164,8 +168,9 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
+	$(LOCAL_PATH) \
 	hardware/mediatek \
-	$(LOCAL_PATH)
+	hardware/xiaomi
 
 # Inherit our proprietary vendor
 $(call inherit-product, vendor/xiaomi/yunluo/yunluo-vendor.mk)
