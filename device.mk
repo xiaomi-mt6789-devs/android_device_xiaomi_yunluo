@@ -148,6 +148,10 @@ PRODUCT_PACKAGES += \
 	libtextclassifier_hash.vendor \
 	libmemunreachable.vendor
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-mediatek
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
