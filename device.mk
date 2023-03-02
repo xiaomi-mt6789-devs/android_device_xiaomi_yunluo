@@ -43,6 +43,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+	android.hardware.bluetooth.audio-impl \
+	libbluetooth_audio_session \
+	android.hardware.bluetooth@1.0.vendor:64 \
+	android.hardware.bluetooth@1.1.vendor:64
+
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-mtkimpl.recovery
