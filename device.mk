@@ -152,6 +152,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek
 
+# RenderScript
+PRODUCT_PACKAGES += \
+	android.hardware.renderscript@1.0-impl
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
