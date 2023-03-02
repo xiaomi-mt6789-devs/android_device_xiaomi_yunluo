@@ -138,6 +138,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service
 
+# Other common
+PRODUCT_PACKAGES += \
+	libflatbuffers-cpp.vendor \
+	libpcap.vendor \
+	libprotobuf-cpp-full.vendor \
+	libprotobuf-cpp-lite.vendor \
+	libruy.vendor \
+	libtextclassifier_hash.vendor \
+	libmemunreachable.vendor
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
