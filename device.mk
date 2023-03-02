@@ -181,6 +181,27 @@ PRODUCT_PACKAGES += \
 	android.hardware.usb@1.2.vendor:64 \
 	android.hardware.usb@1.3.vendor:64
 
+# Wifi
+PRODUCT_PACKAGES += \
+	android.system.wifi.keystore@1.0.vendor:64 \
+	android.hardware.wifi.hostapd@1.0.vendor:64 \
+	android.hardware.wifi.hostapd@1.1.vendor:64 \
+	android.hardware.wifi.hostapd@1.2.vendor:64 \
+	android.hardware.wifi.hostapd@1.3.vendor:64 \
+	android.hardware.wifi.supplicant@1.0.vendor:64 \
+	android.hardware.wifi.supplicant@1.1.vendor:64 \
+	android.hardware.wifi.supplicant@1.2.vendor:64 \
+	android.hardware.wifi.supplicant@1.3.vendor:64 \
+	android.hardware.wifi.supplicant@1.4.vendor:64 \
+	android.hardware.wifi@1.0.vendor:64 \
+	android.hardware.wifi@1.1.vendor:64 \
+	android.hardware.wifi@1.2.vendor:64 \
+	android.hardware.wifi@1.3.vendor:64 \
+	android.hardware.wifi@1.4.vendor:64 \
+	android.hardware.wifi@1.5.vendor:64 \
+	libkeystore-wifi-hidl:64 \
+    libkeystore-engine-wifi-hidl:64
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
