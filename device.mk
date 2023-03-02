@@ -120,6 +120,20 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hardware.light-service.xiaomi
 
+# Media (C2)
+PRODUCT_PACKAGES += \
+	android.hardware.media.c2@1.0.vendor \
+	android.hardware.media.c2@1.1.vendor \
+	android.hardware.media.c2@1.2.vendor \
+	libcodec2_hidl@1.2.vendor \
+	libcodec2_hidl_plugin \
+	libcodec2_vndk.vendor \
+	libcodec2_soft_common.vendor \
+	libeffects \
+    libeffectsconfig.vendor \
+	libsfplugin_ccodec_utils.vendor \
+	libavservices_minijail.vendor
+
 # Init files
 PRODUCT_PACKAGES += \
 	init.insmod.sh \
