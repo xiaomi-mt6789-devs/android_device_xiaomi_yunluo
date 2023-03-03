@@ -155,6 +155,11 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/props/system.prop
 TARGET_VENDOR_PROP += $(CONFIGS_PATH)/props/vendor.prop
 
+# Wifi
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_HOSTAPD_DRIVER := NL80211
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Inherit the proprietary version
 include vendor/xiaomi/yunluo/BoardConfigVendor.mk
