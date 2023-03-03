@@ -149,7 +149,8 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(CONFIGS_PATH)/vintf/framework_co
 BOARD_VNDK_VERSION := current
 
 # SELinux
-BOARD_BOOTCONFIG += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 
 # Inherit the proprietary version
 include vendor/xiaomi/yunluo/BoardConfigVendor.mk
