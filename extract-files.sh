@@ -67,6 +67,9 @@ function blob_fixup() {
         vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so)
             "${PATCHELF}" --set-soname "$(basename "${1}")" "${2}"
             ;;
+        vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc)
+            sed -i 's|android.hardware.graphics.allocator@4.0-service-mediatek|android.hardware.graphics.allocator@4.0-service-mediatek.mt6789|g' "${2}"
+            ;;
     esac
 }
 
