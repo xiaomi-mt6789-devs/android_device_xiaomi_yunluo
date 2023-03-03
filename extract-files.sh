@@ -57,6 +57,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod)
+            "${PATCHELF}" --remove-needed "android.hardware.security.keymint-V1-ndk_platform.so" "${2}"
+            ;;
     esac
 }
 
