@@ -754,26 +754,12 @@ vendor/lib/egl/egl.cfg
 # WiFi
 -vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 
-# Xiaomi
--vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.otrpagent@2.0.xml
+# Xiaomi Micharge
 -vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml;MODULE=vendor.xiaomi.hardware.micharge@1.0.xml
--vendor/etc/vintf/manifest/vendor.xiaomi.hardware.mimd@1.0-service.xml;MODULE=vendor.xiaomi.hardware.mimd@1.0-service.xml
--vendor/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature@1.0-service.xml;MODULE=vendor.xiaomi.hw.touchfeature@1.0-service.xml
 -vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
--vendor/bin/hw/vendor.xiaomi.hardware.mimd@1.0-service
--vendor/bin/vendor.xiaomi.hardware.otrpagent@2.0-service
 -vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc
--vendor/etc/init/vendor.xiaomi.hardware.mimd@1.0-service.rc
--vendor/etc/init/vendor.xiaomi.hardware.otrpagent@2.0-service.rc
--vendor/etc/init/vendor.xiaomi.hw.touchfeature@1.0-service.rc
 -vendor/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
 -vendor/lib64/vendor.xiaomi.hardware.micharge@1.0.so
--vendor/lib64/vendor.xiaomi.hardware.mimd@1.0.so
--vendor/lib64/vendor.xiaomi.hardware.otrpagent@2.0-impl.so
--vendor/lib64/vendor.xiaomi.hardware.otrpagent@2.0.so
--vendor/odm/bin/hw/vendor.xiaomi.hw.touchfeature@1.0-service
--vendor/odm/lib/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so
--vendor/odm/lib64/hw/vendor.xiaomi.hw.touchfeature@1.0-impl.so
 
 # Misc
 -vendor/bin/bip_ap
@@ -788,7 +774,6 @@ vendor/lib/egl/egl.cfg
 -vendor/bin/dconfig
 -vendor/bin/dcxosetcap
 -vendor/bin/dexecutor
--vendor/bin/displayfeature
 -vendor/bin/dmc_core
 -vendor/bin/doeapp-memtester
 -vendor/bin/doeapp-sat
@@ -918,7 +903,6 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/miLut_7.txt
 -vendor/etc/miLut_8.txt
 -vendor/etc/miLut_9.txt
--vendor/etc/mimdconfig
 -vendor/etc/misound_res.bin
 -vendor/etc/misound_res_headphone.bin
 -vendor/etc/misound_res_spk.bin
@@ -986,8 +970,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/libdapparamstorage.so
 -vendor/lib/libdecrypt.so
 -vendor/lib/libDefaultFpsActor.so
--vendor/lib/libdisplayfeature.so
--vendor/lib/libdisplayfeatureservice.so
 -vendor/lib/libdynamiclog.so
 -vendor/lib/libeyecare.so
 -vendor/lib/libfgauge_gm30.so
@@ -1116,7 +1098,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/HEVCSecureVdecCA.so
 -vendor/lib64/hq_algoutils.so
 -vendor/lib64/hq_asd.so
--vendor/lib64/hw/displayfeature.default.so
 -vendor/lib64/hw/kmsetkey.beanpod.so
 -vendor/lib64/hw/libSoftGatekeeper.so
 -vendor/lib64/hw/mt6789/gralloc.common.so
@@ -1166,8 +1147,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/libdeccfg.so
 -vendor/lib64/libdecrypt.so
 -vendor/lib64/libDefaultFpsActor.so
--vendor/lib64/libdisplayfeature.so
--vendor/lib64/libdisplayfeatureservice.so
 -vendor/lib64/libdlbdsservice.so
 -vendor/lib64/libdynamiclog.so
 -vendor/lib64/libeyecare.so
