@@ -151,6 +151,10 @@ BOARD_VNDK_VERSION := current
 # SELinux
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
+# Properties
+TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/props/system.prop
+TARGET_VENDOR_PROP += $(CONFIGS_PATH)/props/vendor.prop
+
 
 # Inherit the proprietary version
 include vendor/xiaomi/yunluo/BoardConfigVendor.mk
