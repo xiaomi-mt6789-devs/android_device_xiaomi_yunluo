@@ -60,6 +60,13 @@ function blob_fixup() {
         vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod)
             "${PATCHELF}" --remove-needed "android.hardware.security.keymint-V1-ndk_platform.so" "${2}"
             ;;
+        vendor/lib*/libspeech_enh_lib.so|\
+        vendor/lib64/libwifi-hal-mtk.so|\
+        vendor/lib64/hw/power.mt6789.so|\
+        vendor/lib64/hw/sound_trigger.primary.mt6789.so|\
+        vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so)
+            "${PATCHELF}" --set-soname "$(basename "${1}")" "${2}"
+            ;;
     esac
 }
 
