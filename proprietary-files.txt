@@ -333,16 +333,13 @@
 -vendor/etc/dsi_l83_44_02_0c_cphy_vdo_mi.xml
 
 # Display-Hardware
--vendor/etc/vintf/manifest/vendor.xiaomi.hardware.displayfeature@1.0-service.xml;MODULE=vendor.xiaomi.hardware.displayfeature@1.0-service.xml
 -vendor/bin/hw/android.hardware.memtrack-service.mediatek
 -vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789
--vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
 -vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
--vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
+-vendor/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 -vendor/lib64/hw/hwcomposer.mtk_common.so
 -vendor/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 -vendor/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so
--vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
 
 # Dolby
 -vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
