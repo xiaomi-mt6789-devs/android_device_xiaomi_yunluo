@@ -41,6 +41,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Virtual A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 
+# Enforce generic ramdisk allow list
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+
 
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31
