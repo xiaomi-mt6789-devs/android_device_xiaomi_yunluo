@@ -149,6 +149,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(CONFIGS_PATH)/vintf/framework_co
 BOARD_VNDK_VERSION := current
 
 # SELinux
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Properties
