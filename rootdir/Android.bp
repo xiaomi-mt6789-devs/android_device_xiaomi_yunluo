@@ -11,8 +11,8 @@ sh_binary {
 }
 
 prebuilt_etc {
-    name: "init.insmod.mt6789.cfg",
-    src: "etc/init.insmod.mt6789.cfg",
+    name: "init.insmod.mtk.cfg",
+    src: "etc/init.insmod.mtk.cfg",
     vendor: true
 }
 
@@ -47,6 +47,13 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.mi_thermald.rc",
     src: "etc/init/hw/init.mi_thermald.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.mt8781.rc",
+    src: "etc/init/hw/init.mt6789.rc",
     sub_dir: "init/hw",
     vendor: true
 }
@@ -96,7 +103,15 @@ prebuilt_etc {
 prebuilt_etc {
     name: "fstab.mt6789",
     src: "etc/fstab.mt6789",
-    vendor: true
+    vendor: true,
+    vendor_ramdisk_available: true
+}
+
+prebuilt_etc {
+    name: "fstab.mt8781",
+    src: "etc/fstab.mt6789",
+    vendor: true,
+    vendor_ramdisk_available: true
 }
 
 prebuilt_etc {

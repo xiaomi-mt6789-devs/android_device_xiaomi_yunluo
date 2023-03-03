@@ -1,4 +1,4 @@
-service insmod_sh /vendor/bin/init.insmod.sh /vendor/etc/init.insmod.${ro.hardware}.cfg
+service insmod_sh /vendor/bin/init.insmod.sh /vendor/etc/init.insmod.mtk.cfg
     class main
     user root
     group root system
