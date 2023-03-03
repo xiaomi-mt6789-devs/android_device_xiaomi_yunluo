@@ -50,6 +50,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
+# AAPT
+PRODUCT_CHARACTERISTICS := tablet
+
 # Audio
 $(call soong_config_set,android_hardware_audio,run_64bit,true)
 
