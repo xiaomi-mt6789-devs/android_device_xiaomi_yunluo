@@ -43,6 +43,37 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
+# Audio
+$(call soong_config_set,android_hardware_audio,run_64bit,true)
+
+PRODUCT_PACKAGES += \
+	android.hardware.audio.service \
+	android.hardware.audio@7.0-impl \
+	android.hardware.audio.effect@7.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+	android.hardware.audio.common-util.vendor:64 \
+	android.hardware.audio.common@5.0.vendor:64 \
+	android.hardware.audio.common@6.0-util.vendor:64 \
+	android.hardware.audio.common@6.0.vendor:64 \
+	android.hardware.audio.common@7.0-enums.vendor:64 \
+	android.hardware.audio.common@7.0-util.vendor:64 \
+	android.hardware.audio.common@7.0.vendor:64 \
+	android.hardware.audio.effect@6.0-util.vendor:64 \
+	android.hardware.audio.effect@6.0.vendor:64 \
+	android.hardware.audio.effect@7.0-util.vendor:64 \
+	android.hardware.audio.effect@7.0.vendor:64 \
+	android.hardware.audio@6.0.vendor:64 \
+	android.hardware.audio@7.0-util.vendor:64 \
+	android.hardware.audio@7.0.vendor:64 \
+	audioclient-types-aidl-cpp.vendor \
+	audio.bluetooth.default \
+	audio.usb.default \
+	libalsautils \
+	libopus.vendor \
+	libtinycompress \
+	libnbaio_mono \
+	libaudiofoundation.vendor
+
 # Bluetooth
 PRODUCT_PACKAGES += \
 	android.hardware.bluetooth.audio-impl \
