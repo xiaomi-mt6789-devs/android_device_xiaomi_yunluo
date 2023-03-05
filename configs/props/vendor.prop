@@ -246,5 +246,8 @@ ro.vendor.standard.video.enable=false
 # NN
 debug.mtk_tflite.target_nnapi=29
 
+# IncrementalFS
+ro.incremental.enable=yes
+
 # Gralloc
 persist.log.tag.gralloc4=S
