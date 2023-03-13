@@ -22,6 +22,10 @@
      entries do not follow the convention, but all new entries should. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
+    in hardware. Required for "Night Light" support-->
+    <bool name="config_setColorTransformAccelerated">true</bool>
+
     <!-- Flag indicating whether we should enable the automatic brightness.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
