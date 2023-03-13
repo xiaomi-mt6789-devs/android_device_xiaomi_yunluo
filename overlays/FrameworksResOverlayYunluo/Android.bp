@@ -1,0 +1,12 @@
+//
+// Copyright (C) 2023 LineageOS
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "FrameworksResOverlayYunluo",
+    sdk_version: "current",
+    vendor: true,
+    resource_dirs: ["res"]
+}
