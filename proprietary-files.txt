@@ -753,13 +753,6 @@ vendor/lib/egl/egl.cfg
 # WiFi
 -vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 
-# Xiaomi Micharge
--vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml;MODULE=vendor.xiaomi.hardware.micharge@1.0.xml
--vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
--vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc
--vendor/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
--vendor/lib64/vendor.xiaomi.hardware.micharge@1.0.so
-
 # Misc
 -vendor/bin/bip_ap
 -vendor/bin/bp_kmsetkey_ca
