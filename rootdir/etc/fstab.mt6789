@@ -15,6 +15,9 @@ vendor /vendor ext4 ro wait,slotselect,avb,logical,first_stage_mount
 
 product /product erofs ro wait,slotselect,avb,logical,first_stage_mount
 product /product ext4 ro wait,slotselect,avb,logical,first_stage_mount
+
+vendor_dlkm /vendor_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount
+
 # 183 "vendor/mediatek/proprietary/hardware/fstab/mt6789/fstab.in.mt6789"
 /dev/block/by-name/metadata /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
 
