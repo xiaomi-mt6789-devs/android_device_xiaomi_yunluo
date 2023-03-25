@@ -505,7 +505,6 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc
 -vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
 -vendor/etc/init/memtrack-mediatek.rc
--vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc
 -vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
 -vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
 -vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
@@ -626,8 +625,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/mt6789/libmtkcam_ulog.so
 -vendor/lib64/mt6789/libmtk_drvb.so
 -vendor/lib64/mtkcam/mt6789/libmtkcam_streaminfo_plugin-p1stt.so
--vendor/lib64/vendor.mediatek.hardware.aee@1.0.so
--vendor/lib64/vendor.mediatek.hardware.aee@1.1.so
 -vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 -vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so
 -vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so
