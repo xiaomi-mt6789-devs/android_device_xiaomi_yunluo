@@ -165,6 +165,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hardware.light-service.xiaomi
 
+# MediaCas
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.2-service-lazy
+
 # Media (C2)
 PRODUCT_PACKAGES += \
 	android.hardware.media.c2@1.0.vendor \
