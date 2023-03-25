@@ -114,6 +114,10 @@ drm.service.enabled=true
 # FRP
 ro.frp.pst=/dev/block/by-name/frp
 
+# SOC Props
+ro.soc.model=MT8781V/NA
+ro.soc.manufacturer=Mediatek
+
 # Media
 media.c2.dmabuf.padding=3072
 persist.vendor.video.dfps.level=0

@@ -761,7 +761,6 @@ vendor/lib/egl/egl.cfg
 -vendor/bin/ccci_mdinit
 -vendor/bin/ccci_rpcd
 -vendor/bin/charge_logger
--vendor/bin/chipinfo;NODEPS
 -vendor/bin/conninfra_loader
 -vendor/bin/dconfig
 -vendor/bin/dcxosetcap
@@ -831,7 +830,6 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/gbe.cfg;MODULE=gbe.cfg
 -vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc
 -vendor/etc/init/camerahalserver.rc
--vendor/etc/init/chipinfo_init.rc
 -vendor/etc/init/dcxo_nvram_init.rc
 -vendor/etc/init/ddr_training.rc
 -vendor/etc/init/display.rc
