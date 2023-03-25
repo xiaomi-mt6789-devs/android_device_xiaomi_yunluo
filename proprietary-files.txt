@@ -637,7 +637,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/vendor.mediatek.hardware.dmc@1.1.so
 -vendor/lib64/vendor.mediatek.hardware.dmc@1.2.so
 -vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
--vendor/lib64/vendor.mediatek.hardware.log@1.0.so
 -vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 -vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so
 -vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
@@ -844,7 +843,6 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/init/init.cccirpcd.rc
 -vendor/etc/init/init.charge_logger.rc
 -vendor/etc/init/init.vendor.ins.rc
--vendor/etc/init/loghidlvendorservice.rc
 -vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 -vendor/etc/init/microtrust.rc
 -vendor/etc/init/mtklog.rc
