@@ -781,7 +781,6 @@ vendor/lib/egl/egl.cfg
 -vendor/bin/mt6789/dumpfaultd.mt6789
 -vendor/bin/mt6789/jpegtool
 -vendor/bin/mt6789/v3avpud.mt6789
--vendor/bin/mtk_pkm_service
 -vendor/bin/muxreport
 -vendor/bin/netdagent
 -vendor/bin/netdc
@@ -847,7 +846,6 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/init/microtrust.rc
 -vendor/etc/init/mtklog.rc
 -vendor/etc/init/mtkrild.rc
--vendor/etc/init/mtk_pkm_service.rc
 -vendor/etc/init/muxreport.rc
 -vendor/etc/init/netdagent.rc
 -vendor/etc/init/networksetting.rc
