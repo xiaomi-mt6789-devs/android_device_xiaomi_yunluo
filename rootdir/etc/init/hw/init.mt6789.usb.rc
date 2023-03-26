@@ -935,17 +935,6 @@ on property:vendor.usb.sib_enable=1
 on property:vendor.usb.sib_enable=0
 	write /proc/mtk_usb/usb-phy0/u3_phy/sib 0
 
-on property:vendor.usb.testmode=0
-	write /proc/mtk_usb/xhci0/testmode "0"
-on property:vendor.usb.testmode=1
-	write /proc/mtk_usb/xhci0/testmode "test SE0 NAK"
-on property:vendor.usb.testmode=2
-	write /proc/mtk_usb/xhci0/testmode "test J"
-on property:vendor.usb.testmode=3
-	write /proc/mtk_usb/xhci0/testmode "test K"
-on property:vendor.usb.testmode=4
-	write /proc/mtk_usb/xhci0/testmode "test packet"
-
 on property:ro.boot.usbconfig=3
     write /config/usb_gadget/g1/UDC "none"
     rm /config/usb_gadget/g1/configs/b.1/f1

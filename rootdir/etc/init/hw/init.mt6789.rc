@@ -3,7 +3,6 @@
 import /vendor/etc/init/hw/init.connectivity.rc
 import /vendor/etc/init/hw/init.mt6789.usb.rc
 import /vendor/etc/init/hw/init.project.rc
-import /vendor/etc/init/hw/init.volte.rc
 import /vendor/etc/init/hw/init.mal.rc
 import /vendor/etc/init/hw/init.sensor_2_0.rc
 import /vendor/etc/init/hw/init.cgroup.rc
@@ -24,21 +23,11 @@ on early-init && property:ro.build.type=eng
     chmod 0755 /sys/kernel/debug
     setprop persist.dbg.keep_debugfs_mounted true
 
-on early-init && property:ro.build.type=userdebug
-    mount debugfs debugfs /sys/kernel/debug
-    chmod 0755 /sys/kernel/debug
-    setprop persist.dbg.keep_debugfs_mounted true
-
 on init
     write /proc/bootprof "INIT:init"
 
     # Support legacy paths
     symlink /sdcard /mnt/sdcard
-
-    # if primary storage is physical, set ro.vold.primary_physical to 1
-    # setprop ro.vold.primary_physical 1
-
-    mkdir /mnt/cd-rom 0000 system system
 
 # add this link for cust/rescue/opconfig/opcust mount
     symlink /dev/block /dev/block/bootdevice
@@ -70,7 +59,6 @@ on charger
     mount ext4 /dev/block/by-name/cache /cache rw wait
     chmod 0660 /dev/spm
     chown system system /dev/spm
-    start spm_script
     chmod 0666 /dev/kmsg
     chmod 0775 /mnt/vendor
     mkdir /mnt/vendor/nvcfg
@@ -123,10 +111,6 @@ on fs
     mount ext4 /dev/block/by-name/rescue /mnt/rescue noatime
     restorecon_recursive /mnt/rescue
 
-on fs
-
-   mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
-
 on late-fs
     write /proc/bootprof "INIT:late-fs"
     wait_for_prop hwservicemanager.ready "true"
@@ -140,9 +124,6 @@ on late-fs
 
 on post-fs
     write /proc/bootprof "INIT:post-fs"
-
-    # Support legacy paths
-    symlink /sdcard /storage/sdcard0
 
     #change permissions for mediaserver
     chown root media /proc/clkmgr/mipi_test
@@ -195,9 +176,6 @@ on post-fs-data
     swapon_all /vendor/etc/fstab.enableswap
 
     # boot time fs tune
-    write /sys/block/mmcblk0/queue/iostats 0
-    write /sys/block/mmcblk0/queue/read_ahead_kb 2048
-    write /sys/block/mmcblk0/queue/nr_requests 256
     write /sys/block/sdc/queue/iostats 0
     write /sys/block/sdc/queue/read_ahead_kb 2048
     write /sys/block/sdc/queue/nr_requests 256
@@ -616,9 +594,6 @@ on post-fs-data
     chown system camera /dev/vpu
     chown system camera /dev/apusys
     chown system camera /dev/mtk_ccd
-    chown system camera /sys/kernel/debug/mtk_cam_dbg/0/ctrl
-    chown system camera /sys/kernel/debug/mtk_cam_dbg/1/ctrl
-    chown system camera /sys/kernel/debug/mtk_cam_dbg/2/ctrl
 
     #CCU
     chmod 0660 /dev/ccu
@@ -659,30 +634,6 @@ on post-fs-data
 
    #change partition permission
 
-    chmod 0640 /mtd@sec_ro
-    chown root system /mtd@sec_ro
-
-    chmod 0640 /mtd@preloader
-    chown root system /mtd@preloader
-
-    chmod 0660 /mtd@pro_info
-    chown root system /mtd@pro_info
-
-    chmod 0640 /mtd@bootimg
-    chown root system /mtd@bootimg
-
-    chmod 0640 /mtd@recovery
-    chown root system /mtd@recovery
-
-    chmod 0660 /mtd@nvram
-    chown root system /mtd@nvram
-
-    chmod 0660 /mtd@seccfg
-    chown root system /mtd@seccfg
-
-    chmod 0660 /mtd@misc
-    chown root system /mtd@misc
-
     chmod 0664 /sys/bus/platform/drivers/emi_ctrl/concurrency_scenario
     chown media media /sys/bus/platform/drivers/emi_ctrl/concurrency_scenario
 
@@ -720,16 +671,6 @@ on post-fs-data
     chmod 0440 /dev/mcupm
     chown root system /dev/mcupm
 
-    #EM of MT6360
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360_pmu.5-0034/data
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360_pmic.5-001a/data
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360_ldo.5-0064/data
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360-4e/data
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360_pmu.5-0034/reg_addr
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360_pmic.5-001a/reg_addr
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360_ldo.5-0064/reg_addr
-    chmod 0664 sys/kernel/debug/rt-regmap/mt6360-4e/reg_addr
-
 	#widevine driver node
 	chmod 0660 /dev/drm_wv
 	chown media system /dev/drm_wv
@@ -765,8 +706,6 @@ on boot
     chmod 0660 /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
     chown system system /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
     chmod 0660 /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
-    chown root   system /sys/kernel/debug/binder/transaction_log_enable
-    chown root   system /sys/kernel/debug/binder/perf_evalue
     chown system system /sys/devices/system/cpu/rq-stats/htasks_thresh
     chmod 0660 /sys/devices/system/cpu/rq-stats/htasks_thresh
     chown system system /sys/devices/system/cpu/rq-stats/avg_htasks_thresh
@@ -778,12 +717,6 @@ on boot
     chown root   radio  /sys/class/leds/lcd-backlight/duty
     chown root   radio  /sys/class/leds/lcd-backlight/div
     chown system system /sys/class/leds/lcd-backlight/trigger
-    chown system system /sys/class/leds/button-backlight/trigger
-    chown system system /sys/class/leds/keyboard-backlight/trigger
-    chown system system /sys/class/leds/jogball-backlight/trigger
-    chown system system /sys/class/leds/red/trigger
-    chown system system /sys/class/leds/green/trigger
-    chown system system /sys/class/leds/blue/trigger
 
     # gauge symbolic
     symlink /sys/devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-gauge /dev/gauge
@@ -935,42 +868,8 @@ on boot
 #Power Manager
     write /sys/power/pm_freeze_timeout 2000
 
-on property:vold.decrypt=trigger_reset_main
-    write /proc/bootprof "INIT:vold.decrypt=trigger_reset_main"
-    setprop sys.boot_completed 0
-    setprop dev.bootcomplete 0
-
-on property:vold.decrypt=trigger_post_fs_data
-    write /proc/bootprof "INIT:vold.decrypt=trigger_post_fs_data"
-
-on property:vold.decrypt=trigger_restart_min_framework
-    write /proc/bootprof "INIT:vold.decrypt=trigger_restart_min_framework"
-    start msensord
-    start permission_check
-
-on property:vold.decrypt=trigger_restart_framework
-    write /proc/bootprof "INIT:vold.decrypt=trigger_restart_framework"
-    start msensord
-    start permission_check
-
-on property:vold.decrypt=trigger_shutdown_framework
-    write /proc/bootprof "INIT:vold.decrypt=trigger_shutdown_framework"
-    setprop sys.boot_completed 0
-    setprop dev.bootcomplete 0
-
-# bugreport is triggered by holding down volume down, volume up and power
-service bugreport /system/bin/dumpstate -d -p -B -z \
-        -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
-    class late_start
-    disabled
-    oneshot
-    keycodes 114 115 116
-
 # end boot time fs tune
 on property:sys.boot_completed=1
-    write /sys/block/mmcblk0/queue/iostats 1
-    write /sys/block/mmcblk0/queue/read_ahead_kb 512
-    write /sys/block/mmcblk0/queue/nr_requests 128
     write /sys/block/sdc/queue/iostats 1
     write /sys/block/sdc/queue/read_ahead_kb 512
     write /sys/block/sdc/queue/nr_requests 128
@@ -988,46 +887,6 @@ on property:sys.boot_completed=1
     # stop bootprof
     write /proc/bootprof 0
 
-# mount debugfs on user-root
-on property:sys.boot_completed=1 && property:ro.build.type=user && property:ro.debuggable="1"
-   mount debugfs debugfs /sys/kernel/debug
-   chmod 0755 /sys/kernel/debug
-   setprop persist.dbg.keep_debugfs_mounted true
-
-#service dpfd /vendor/bin/dpfd
-#	user root
-#	group system media
-
-#
-#  External Modme control related services
-#
-
-#
-#  Modem related services (Begin)
-#
-##Add by T.Zh for ppp daemon
-#service pppd /system/bin/pppd file /data/misc/ppp/ppp_options
-#    user root
-#    disabled
-#    oneshot
-#
-##
-#
-#  Modem related services (End)
-#
-
-#add for power-off alarm
-#service poad /vendor/bin/poad
-#    class main
-#    user system
-#    group system
-#    oneshot
-
-#service BGW /vendor/xbin/BGW
-#	user system
-#	group gps system radio
-#	class main
-
 # Battery info
 on property:persist.vendor.mediatek.fg.disable=1
     write /dev/gauge/FG_daemon_disable 1
@@ -1041,37 +900,6 @@ on property:persist.vendor.mediatek.fg.force25c=0
 on property:persist.vendor.mediatek.fg.log.enable=1
     write /dev/gauge/FG_daemon_log_level 7
 
-# add loghidl client
-service loghidlsysservice /system/bin/loghidlsysservice
-    class main
-    user root
-    group system
-    disabled
-
-# add meta_tst for ATM
-service meta_tst /vendor/bin/meta_tst
-    class core
-    user root
-    group radio gps system wifi audio bluetooth media
-    capabilities NET_RAW NET_ADMIN
-    socket meta-atci stream 660 radio system
-    disabled
-    oneshot
-
-service factory_no_image /vendor/bin/factory
-    user root
-    group radio system wifi media gps audio bluetooth wakelock nfc
-    capabilities BLOCK_SUSPEND NET_RAW NET_ADMIN SYS_ADMIN SYS_BOOT
-    socket factory-atci stream 660 radio system
-    disabled
-    oneshot	
-
-# start meta_tst for ATM
-on property:sys.boot_completed=1 && property:ro.boot.atm=enable
-    start meta_tst
-    start loghidlvendorservice
-    start loghidlsysservice
-
 # reset mdmode when modem crash happens in ATM
 on property:vendor.mtk.md1.status=reset
     setprop persist.vendor.atm.mdmode normal
@@ -1080,21 +908,3 @@ on property:vendor.mtk.md1.status=reset
 on property:persist.vendor.mediatek.fast_charging.support=*
     write /sys/devices/platform/charger/fast_chg_indicator ${persist.vendor.mediatek.fast_charging.support}
 
-# FPSGO FBT Game
-on boot
-    insmod /vendor/lib/modules/fpsgo.ko
-
-# VSIM service (vendor OSI)
-service osi /system/bin/osi
-    class main
-    user root
-    disabled
-    oneshot
-    #seclabel u:r:osi:s0
-
-service charger /system/bin/charger
-    class charger
-    critical
-    #seclabel u:r:charger:s0
-    group system graphics
-    seclabel u:r:healthd:s0
