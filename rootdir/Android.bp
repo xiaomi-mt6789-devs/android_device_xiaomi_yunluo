@@ -24,13 +24,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.charge_logger.rc",
-    src: "etc/init/hw/init.charge_logger.rc",
-    sub_dir: "init/hw",
-    vendor: true
-}
-
-prebuilt_etc {
     name: "init.connectivity.common.rc",
     src: "etc/init/hw/init.connectivity.common.rc",
     sub_dir: "init/hw",

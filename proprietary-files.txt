@@ -756,7 +756,6 @@ vendor/lib/egl/egl.cfg
 -vendor/bin/ccci_fsd
 -vendor/bin/ccci_mdinit
 -vendor/bin/ccci_rpcd
--vendor/bin/charge_logger
 -vendor/bin/conninfra_loader
 -vendor/bin/dconfig
 -vendor/bin/dcxosetcap
@@ -840,7 +839,6 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/init/init.cccifsd.rc
 -vendor/etc/init/init.cccimdinit.rc
 -vendor/etc/init/init.cccirpcd.rc
--vendor/etc/init/init.charge_logger.rc
 -vendor/etc/init/init.vendor.ins.rc
 -vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 -vendor/etc/init/microtrust.rc

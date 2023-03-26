@@ -5,9 +5,6 @@ import /vendor/etc/init/hw/init.mtkgki.rc
 #mi thermald init
 import /vendor/etc/init/hw/init.mi_thermald.rc
 
-#charge logger init
-import /vendor/etc/init/hw/init.charge_logger.rc
-
 on init
     mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
     mkdir /storage/usbotg 0700 root root

@@ -277,7 +277,6 @@ PRODUCT_PACKAGES += \
 	init.insmod.sh \
 	init.insmod.mtk.cfg \
 	init.cgroup.rc \
-	init.charge_logger.rc \
 	init.connectivity.common.rc \
 	init.connectivity.rc \
 	init.mi_thermald.rc \
