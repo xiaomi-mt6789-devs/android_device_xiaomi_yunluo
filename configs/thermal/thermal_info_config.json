@@ -1,0 +1,48 @@
+{
+  "Sensors": [
+    {
+      "Name": "CPU",
+      "Type": "CPU",
+      "ZoneName": "soc_max",
+      "HotThreshold": ["NAN", "NAN", "NAN", 85.0, 90.0, 100.0, 117.0],
+      "VrThreshold": "85.0",
+      "Multiplier": 0.001
+    },
+    {
+      "Name": "GPU",
+      "Type": "GPU",
+      "ZoneName": "soc_max",
+      "HotThreshold": ["NAN", "NAN", "NAN", 85.0, 90.0, 100.0, 117.0],
+      "VrThreshold": "85.0",
+      "Multiplier": 0.001
+    },
+    {
+      "Name": "battery",
+      "Type": "BATTERY",
+      "HotThreshold": ["NAN", "NAN", "NAN", 50.0, 55.0, 59.0, 60.0],
+      "VrThreshold": "50.0",
+      "Multiplier": 0.001
+    },
+    {
+      "Name": "mtktsAP",
+      "Type": "SKIN",
+      "HotThreshold": ["NAN", "NAN", "NAN", 50.0, 70.0, 80.0, 90.0],
+      "VrThreshold": "50.0",
+      "Multiplier": 0.001
+    },
+    {
+      "Name": "NPU",
+      "Type": "NPU",
+      "ZoneName": "soc_max",
+      "HotThreshold": ["NAN", "NAN", "NAN", 85.0, 90.0, 100.0, 117.0],
+      "VrThreshold": "NAN",
+      "Multiplier": 0.001
+    }
+  ],
+  "CoolingDevices": [
+    {
+      "Name": "thermal-devfreq-0",
+      "Type": "CPU"
+    }
+  ]
+}

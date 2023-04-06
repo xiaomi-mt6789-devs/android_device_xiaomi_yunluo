@@ -705,12 +705,7 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/sensors.touch.detect.so
 
 # Thermal
--vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
 -vendor/bin/mi_thermald
--vendor/bin/thermal_core
--vendor/bin/thermal_intf
--vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
--vendor/etc/init/init.thermal_core.rc
 -vendor/etc/thermal-camera.conf
 -vendor/etc/thermal-chg-only.conf
 -vendor/etc/thermal-map.conf
@@ -729,10 +724,6 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/thermal/thermal_policy_02.conf
 -vendor/etc/thermal/thermal_policy_08.conf
 -vendor/etc/thermald-devices.conf
--vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
-
-# Thermal-Hardware
--vendor/lib64/hw/thermal_hal.so
 
 # WiFi
 -vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
