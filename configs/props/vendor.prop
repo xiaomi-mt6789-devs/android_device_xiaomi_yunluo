@@ -83,8 +83,6 @@ ro.vendor.wlan.standalone.log=y
 vendor.connsys.driver.ready=no
 
 # Display
-debug.mediatek.appgamepq_compress=1
-debug.mediatek.disp_decompress=1
 debug.renderengine.backend=skiagl
 debug.sf.enable_gl_backpressure=1
 debug.sf.late.sf.duration=29100000
@@ -207,7 +205,6 @@ ro.vendor.mtk_single_bin_modem_support=1
 ro.vendor.mtk_slow_motion_support=1
 ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.mtk_tee_gp_support=1
-ro.vendor.mtk_thermal_2_0=1
 ro.vendor.mtk_video_hevc_enc_support=1
 ro.vendor.mtk_wappush_support=1
 ro.vendor.mtk_wfd_support=1

@@ -40,11 +40,6 @@ dalvik.vm.boot-dex2oat-threads=6
 dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5
 dalvik.vm.image-dex2oat-threads=6
 
-# Power
-ro.mtk_perf_fast_start_win=1
-ro.mtk_perf_response_time=1
-ro.mtk_perf_simple_start_win=1
-
 # Netflix
 ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
 ro.netflix.signup=1
