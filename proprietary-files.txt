@@ -333,7 +333,6 @@
 -vendor/etc/dsi_l83_44_02_0c_cphy_vdo_mi.xml
 
 # Display-Hardware
--vendor/bin/hw/android.hardware.memtrack-service.mediatek
 -vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789
 -vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 -vendor/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so
@@ -492,7 +491,6 @@ vendor/lib/egl/egl.cfg
 
 # Mediatek
 -vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml;MODULE=android.hardware.usb@1.2-service-mediatekv2.xml
--vendor/etc/vintf/manifest/memtrack-mediatek.xml;MODULE=memtrack-mediatek.xml
 -vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 -vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek
 -vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
@@ -503,7 +501,6 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 -vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc
 -vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
--vendor/etc/init/memtrack-mediatek.rc
 -vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
 -vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
 -vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
