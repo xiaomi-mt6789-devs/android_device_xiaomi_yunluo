@@ -70,28 +70,28 @@ $(call soong_config_set,android_hardware_audio,run_64bit,true)
 
 PRODUCT_PACKAGES += \
 	android.hardware.audio.service \
-	android.hardware.audio@7.1-impl \
-	android.hardware.audio.effect@7.0-impl \
-	audioclient-types-aidl-cpp.vendor \
-	audio.bluetooth.default \
-	audio.usb.default \
-	libalsautils \
-	libopus.vendor \
-	libtinycompress \
-	libnbaio_mono \
-	libaudiofoundation.vendor
+	android.hardware.audio@7.1-impl:64 \
+	android.hardware.audio.effect@7.0-impl:64 \
+	audioclient-types-aidl-cpp.vendor:64 \
+	audio.bluetooth.default:64 \
+	audio.usb.default:64 \
+	libalsautils:64 \
+	libopus.vendor:64 \
+	libtinycompress:64 \
+	libnbaio_mono:64 \
+	libaudiofoundation.vendor:64
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-	android.hardware.bluetooth.audio-impl \
-	libbluetooth_audio_session \
+	android.hardware.bluetooth.audio-impl:64 \
+	libbluetooth_audio_session:64 \
 	android.hardware.bluetooth@1.0.vendor:64 \
 	android.hardware.bluetooth@1.1.vendor:64
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
 	android.hardware.boot@1.2-service \
-	android.hardware.boot@1.2-mtkimpl \
+	android.hardware.boot@1.2-mtkimpl:64 \
     android.hardware.boot@1.2-mtkimpl.recovery
 
 # Camera
@@ -110,9 +110,9 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
 	android.hardware.graphics.composer@2.3-service \
-	libhwc2on1adapter \
-	libhwc2onfbadapter \
-	libdrm.vendor
+	libhwc2on1adapter:64 \
+	libhwc2onfbadapter:64 \
+	libdrm.vendor:64
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -138,20 +138,20 @@ PRODUCT_PACKAGES += \
 
 # Keymaster / Keymint
 PRODUCT_PACKAGES += \
-	libkeymaster_messages.vendor \
-	libkeymaster_portable.vendor \
-	libkeymint.vendor \
-	libpuresoftkeymasterdevice.vendor
+	libkeymaster_messages.vendor:64 \
+	libkeymaster_portable.vendor:64 \
+	libkeymint.vendor:64 \
+	libpuresoftkeymasterdevice.vendor:64
 
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
-    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-impl:64 \
     android.hardware.health@2.1-impl.recovery
 
 # HIDL
 PRODUCT_PACKAGES += \
-	libhidltransport.vendor \
+	libhidltransport.vendor:64 \
 	libhwbinder.vendor
 
 # Lights
@@ -164,21 +164,17 @@ PRODUCT_PACKAGES += \
 
 # Media (C2)
 PRODUCT_PACKAGES += \
-	android.hardware.media.c2@1.0.vendor \
-	android.hardware.media.c2@1.1.vendor \
-	android.hardware.media.c2@1.2.vendor \
-	libcodec2_hidl@1.2.vendor \
-	libcodec2_hidl_plugin \
-	libcodec2_vndk.vendor \
-	libcodec2_soft_common.vendor \
-	libeffects \
-    libeffectsconfig.vendor \
-	libsfplugin_ccodec_utils.vendor \
-	libavservices_minijail.vendor
-
-# Media (OMX)
-PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service
+	android.hardware.media.c2@1.0.vendor:64 \
+	android.hardware.media.c2@1.1.vendor:64 \
+	android.hardware.media.c2@1.2.vendor:64 \
+	libcodec2_hidl@1.2.vendor:64 \
+	libcodec2_hidl_plugin:64 \
+	libcodec2_vndk.vendor:64 \
+	libcodec2_soft_common.vendor:64 \
+	libeffects:64 \
+    libeffectsconfig.vendor:64 \
+	libsfplugin_ccodec_utils.vendor:64 \
+	libavservices_minijail.vendor:64
 
 # Memtrack
 PRODUCT_PACKAGES += \
@@ -186,13 +182,13 @@ PRODUCT_PACKAGES += \
 
 # Other common
 PRODUCT_PACKAGES += \
-	libflatbuffers-cpp.vendor \
-	libpcap.vendor \
-	libprotobuf-cpp-full.vendor \
-	libprotobuf-cpp-lite.vendor \
-	libruy.vendor \
-	libtextclassifier_hash.vendor \
-	libmemunreachable.vendor
+	libflatbuffers-cpp.vendor:64 \
+	libpcap.vendor:64 \
+	libprotobuf-cpp-full.vendor:64 \
+	libprotobuf-cpp-lite.vendor:64 \
+	libruy.vendor:64 \
+	libtextclassifier_hash.vendor:64 \
+	libmemunreachable.vendor:64
 
 # Power
 PRODUCT_PACKAGES += \
@@ -215,11 +211,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.frameworks.sensorservice@1.0.vendor:64 \
 	android.hardware.sensors-service.multihal \
-	libsensorndkbridge
+	libsensorndkbridge:64
 
 # Soundtrigger
 PRODUCT_PACKAGES += \
-	android.hardware.soundtrigger@2.3-impl
+	android.hardware.soundtrigger@2.3-impl:64
 
 # Thermal
 $(call inherit-product, hardware/mediatek/hidl/thermal/device.mk)
