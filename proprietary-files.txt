@@ -1,4 +1,4 @@
-# Unpinned blobs from yunluo-user 12 SP1A.210812.016 V13.1.7.0.SLYMIXM release-keys
+# Unpinned blobs from missi_pad_global-user 13 TP1A.220624.014 V14.0.1.0.TLYMIXM release-keys
 
 # Audio
 -vendor/lib64/libaudiocompensationfilterc.so
@@ -13,6 +13,8 @@
 -vendor/lib64/libaudiosmartpamtk.so
 -vendor/lib64/libaudiotoolkit_vendor.so
 -vendor/lib64/libaudio_param_parser-vnd.so
+-vendor/lib64/libvoiprec.so
+-vendor/lib64/libmiresample.so
 -vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
 
 # Audio-Hardware
