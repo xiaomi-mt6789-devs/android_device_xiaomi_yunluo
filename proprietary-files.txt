@@ -150,8 +150,6 @@
 -vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 
 # Camera
--vendor/lib/mt6789/libcam.hal3a.log.so
--vendor/lib/mt6789/libcam.halsensor.hwintegration.so
 -vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so
 -vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 -vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
@@ -337,7 +335,6 @@
 # Display-Hardware
 -vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789
 -vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
--vendor/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 -vendor/lib64/hw/hwcomposer.mtk_common.so
 -vendor/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 -vendor/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so
@@ -687,16 +684,10 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 -vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
 
-# NFC
--vendor/lib/libnxp_extamp_intf.so
--vendor/lib64/libnxp_extamp_intf.so
-
 # Neural-networks
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml;MODULE=android.hardware.neuralnetworks-shim-service-mtk.xml
 -vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk
 -vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc
--vendor/lib/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so
--vendor/lib/mt6789/libneuron_adapter_mgvi.so
 -vendor/lib64/libneuron_graph_delegate.mtk.so
 -vendor/lib64/libneuron_platform.so
 -vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so
@@ -733,7 +724,6 @@ vendor/lib/egl/egl.cfg
 # Misc
 -vendor/bin/bip_ap
 -vendor/bin/bp_kmsetkey_ca
--vendor/bin/bt_dump
 -vendor/bin/ccci_fsd
 -vendor/bin/ccci_mdinit
 -vendor/bin/ccci_rpcd
@@ -744,21 +734,14 @@ vendor/lib/egl/egl.cfg
 -vendor/bin/dmc_core
 -vendor/bin/doeapp-memtester
 -vendor/bin/doeapp-sat
--vendor/bin/dtc_vendor
 -vendor/bin/eara_io_service
--vendor/bin/ffu
--vendor/bin/fpsgo
 -vendor/bin/fuelgauged
 -vendor/bin/fuelgauged_nvram
 -vendor/bin/gbe
--vendor/bin/gsm0710muxd
 -vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod
 -vendor/bin/hw/mtkfusionrild
 -vendor/bin/hw/tetheroffloadservice
 -vendor/bin/kmsetkey;NODEPS
--vendor/bin/mrdump_tool
--vendor/bin/mt6660_calibration
--vendor/bin/mt6789/dumpfaultd.mt6789
 -vendor/bin/mt6789/jpegtool
 -vendor/bin/mt6789/v3avpud.mt6789
 -vendor/bin/muxreport
@@ -766,16 +749,8 @@ vendor/lib/egl/egl.cfg
 -vendor/bin/netdc
 -vendor/bin/nvram_daemon
 -vendor/bin/rcs_volte_stack
--vendor/bin/rt5512_calibration
--vendor/bin/rttv_v2
--vendor/bin/setup_fct;NODEPS
--vendor/bin/smartcharging
--vendor/bin/smartpa_nvtest
--vendor/bin/stp_dump3
--vendor/bin/tcpdump-vendor
 -vendor/bin/teei_daemon
 -vendor/bin/vpud
--vendor/bin/wifi_dump
 -vendor/bin/wlan_assistant
 -vendor/bin/wmt_launcher
 -vendor/bin/wmt_loader
@@ -784,7 +759,6 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/apdb/APDB_MT6789___W2224_ENUM
 -vendor/etc/armnn_app.config
 -vendor/etc/AudioLog_dynamic.xml
--vendor/etc/cit_param_config.json
 -vendor/etc/cust_color.xml
 -vendor/etc/cust_color_dsi_l83_36_02_0a_cphy_vdo_mi.xml
 -vendor/etc/cust_color_dsi_l83_44_02_0b_cphy_vdo_mi.xml
@@ -806,16 +780,9 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc
 -vendor/etc/init/camerahalserver.rc
 -vendor/etc/init/dcxo_nvram_init.rc
--vendor/etc/init/ddr_training.rc
--vendor/etc/init/display.rc
--vendor/etc/init/dmc_core.rc
 -vendor/etc/init/eara-io-service.rc
--vendor/etc/init/ffu.rc
--vendor/etc/init/fpsgo.rc
 -vendor/etc/init/fuelgauged_init.rc
 -vendor/etc/init/fuelgauged_nvram_init.rc
--vendor/etc/init/gbe.rc
--vendor/etc/init/gsm0710muxd.rc
 -vendor/etc/init/init.bip_ap.rc
 -vendor/etc/init/init.cccifsd.rc
 -vendor/etc/init/init.cccimdinit.rc
@@ -829,7 +796,6 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/init/netdagent.rc
 -vendor/etc/init/networksetting.rc
 -vendor/etc/init/nvram_daemon.rc
--vendor/etc/init/smartcharging_init.rc
 -vendor/etc/init/tetheroffloadservice.rc
 -vendor/etc/init/v3avpud.rc
 -vendor/etc/init/volte_clientapi_ua.rc
@@ -896,18 +862,13 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/libcodec2_soft_mtk_msadpcmdec.so
 -vendor/lib/libcodec2_vpp_qt_plugin.so
 -vendor/lib/libcodec2_vpp_rs_plugin.so
--vendor/lib/libcolortempmode.so
 -vendor/lib/libconnfem.so
 -vendor/lib/libcustom_nvram.so
 -vendor/lib/libcvsd_mtk.so
 -vendor/lib/libdapparamstorage.so
--vendor/lib/libdecrypt.so
 -vendor/lib/libDefaultFpsActor.so
--vendor/lib/libdynamiclog.so
--vendor/lib/libeyecare.so
 -vendor/lib/libfgauge_gm30.so
 -vendor/lib/libfile_op.so
--vendor/lib/libflatmode.so
 -vendor/lib/libformatter.so
 -vendor/lib/libFrameRecord.so
 -vendor/lib/libged.so
@@ -931,13 +892,9 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/libJpgEncPipe.so
 -vendor/lib/libladder.so
 -vendor/lib/liblogwrap_vendor.so
--vendor/lib/libmiBrightness.so
--vendor/lib/libMiDispDevManager.so
 -vendor/lib/libminiui.so
--vendor/lib/libmiSensorCtrl.so
 -vendor/lib/libmisound.so
 -vendor/lib/libmisoundcrossfade.so
--vendor/lib/libmiXmlParser.so
 -vendor/lib/libmml.so
 -vendor/lib/libmnetlink_v104.so
 -vendor/lib/libmp3dec_mtk.so
@@ -964,7 +921,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/libNoFpsActor.so
 -vendor/lib/libnvram.so
 -vendor/lib/libnvram_sec.so
--vendor/lib/libpaperMode.so
 -vendor/lib/libpixelflinger.so
 -vendor/lib/libpower_timer.so
 -vendor/lib/libpqframework.so
@@ -985,7 +941,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/libtflite_mtk.so
 -vendor/lib/libthha.so
 -vendor/lib/libtlcWidevineModularDrm.so
--vendor/lib/libtruetone.so
 -vendor/lib/libudf.so
 -vendor/lib/liburee_meta_drmkeyinstall.so
 -vendor/lib/libvcodecdrv_header_stub.so
@@ -1004,7 +959,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/libwapi.so
 -vendor/lib/lib_iir.so
 -vendor/lib/lib_speech_enh.so
--vendor/lib/meta_wifi_data.so
 -vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so
 -vendor/lib/mt6789/libaalservice.so
 -vendor/lib/mt6789/libaal_cust_func.so
@@ -1068,24 +1022,19 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so
 -vendor/lib64/libcodec2_vpp_qt_plugin.so
 -vendor/lib64/libcodec2_vpp_rs_plugin.so
--vendor/lib64/libcolortempmode.so
 -vendor/lib64/libcomposer_ext.so
 -vendor/lib64/libconnfem.so
 -vendor/lib64/libcustom_nvram.so
 -vendor/lib64/libcvsd_mtk.so
 -vendor/lib64/libdapparamstorage.so
--vendor/lib64/libdeccfg.so
--vendor/lib64/libdecrypt.so
 -vendor/lib64/libDefaultFpsActor.so
+-vendor/lib64/libdeccfg.so
 -vendor/lib64/libdlbdsservice.so
--vendor/lib64/libdynamiclog.so
--vendor/lib64/libeyecare.so
 -vendor/lib64/libFaceCenterAlgo.so
 -vendor/lib64/libfacetracker.so
 -vendor/lib64/libfft_vendor.so
 -vendor/lib64/libfgauge_gm30.so
 -vendor/lib64/libfile_op.so
--vendor/lib64/libflatmode.so
 -vendor/lib64/libforkexecwrap.so
 -vendor/lib64/libformatter.so
 -vendor/lib64/libFrameRecord.so
@@ -1120,14 +1069,10 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/libksensor.so
 -vendor/lib64/libladder.so
 -vendor/lib64/liblogwrap_vendor.so
--vendor/lib64/libmiBrightness.so
--vendor/lib64/libMiDispDevManager.so
 -vendor/lib64/libminiui.so
 -vendor/lib64/libmipc.so
--vendor/lib64/libmiSensorCtrl.so
 -vendor/lib64/libmisound.so
 -vendor/lib64/libmisoundcrossfade.so
--vendor/lib64/libmiXmlParser.so
 -vendor/lib64/libmmagent.so
 -vendor/lib64/libmml.so
 -vendor/lib64/libmnetlink_v104.so
@@ -1158,7 +1103,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/libnpagent_server.so
 -vendor/lib64/libnvram.so
 -vendor/lib64/libnvram_sec.so
--vendor/lib64/libpaperMode.so
 -vendor/lib64/libpixelflinger.so
 -vendor/lib64/libpower_timer.so
 -vendor/lib64/libpqframework.so
@@ -1184,7 +1128,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/libtranslator_mdmi_v2.8.2.so
 -vendor/lib64/libtranslator_utils.so
 -vendor/lib64/libtrm.so
--vendor/lib64/libtruetone.so
 -vendor/lib64/libudf.so
 -vendor/lib64/liburee_meta_drmkeyinstall.so
 -vendor/lib64/libvcodecdrv_header_stub.so
@@ -1210,7 +1153,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/lib_eara_io_util.so
 -vendor/lib64/lib_iir.so
 -vendor/lib64/lib_speech_enh.so
--vendor/lib64/meta_wifi_data.so
 -vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so
 -vendor/lib64/mt6789/gc08a3_mipi_raw_IdxMgr.so
 -vendor/lib64/mt6789/gc08a3_mipi_raw_tuning.so

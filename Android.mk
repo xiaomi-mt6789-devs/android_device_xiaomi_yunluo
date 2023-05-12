@@ -13,42 +13,17 @@ include $(CLEAR_VARS)
 
 # Libraries / Binaries linked to <dir>/<platform>/<lib>.so
 VENDOR_PLATFORM_LINKS := \
-	$(TARGET_OUT_VENDOR)/bin/dumpfaultd.$(TARGET_BOARD_PLATFORM) \
 	$(TARGET_OUT_VENDOR)/bin/jpegtool \
 	$(TARGET_OUT_VENDOR)/bin/v3avpud.mt6789 \
 	$(TARGET_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789 \
 	$(TARGET_OUT_VENDOR)/bin/hw/camerahalserver \
 	$(TARGET_OUT_VENDOR)/lib/arm.graphics-V1-ndk_platform.so \
 	$(TARGET_OUT_VENDOR)/lib/egl/libGLES_mali.so \
-	$(TARGET_OUT_VENDOR)/lib/gc08a3_mipi_raw_IdxMgr.so \
-	$(TARGET_OUT_VENDOR)/lib/gc08a3_mipi_raw_tuning.so \
-	$(TARGET_OUT_VENDOR)/lib/hi846_mipi_raw_IdxMgr.so \
-	$(TARGET_OUT_VENDOR)/lib/hi846_mipi_raw_tuning.so \
-	$(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
-	$(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
 	$(TARGET_OUT_VENDOR)/lib/hw/gralloc.common.so \
 	$(TARGET_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
 	$(TARGET_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
 	$(TARGET_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so \
 	$(TARGET_OUT_VENDOR)/lib/hw/vulkan.mali.so \
-	$(TARGET_OUT_VENDOR)/lib/lib3a.ae.core.so \
-	$(TARGET_OUT_VENDOR)/lib/lib3a.ae.so \
-	$(TARGET_OUT_VENDOR)/lib/lib3a.awb.core.so \
-	$(TARGET_OUT_VENDOR)/lib/lib3a.log.so \
-	$(TARGET_OUT_VENDOR)/lib/libCamera_gc08a3mipiraw_Face_Capture.so \
-	$(TARGET_OUT_VENDOR)/lib/libCamera_gc08a3mipiraw_Scene_Capture.so \
-	$(TARGET_OUT_VENDOR)/lib/libCamera_gc08a3mipiraw_Scene_Capture_4cell.so \
-	$(TARGET_OUT_VENDOR)/lib/libCamera_gc08a3mipiraw_Scene_Preview.so \
-	$(TARGET_OUT_VENDOR)/lib/libCamera_gc08a3mipiraw_Scene_Preview_4k.so \
-	$(TARGET_OUT_VENDOR)/lib/libCamera_gc08a3mipiraw_Video_1080.so \
-	$(TARGET_OUT_VENDOR)/lib/libCamera_gc08a3mipiraw_Video_4k.so \
-	$(TARGET_OUT_VENDOR)/lib/libCamera_hi846mipiraw_Face_Capture.so \
-	$(TARGET_OUT_VENDOR)/lib/libCamera_hi846mipiraw_Scene_Capture.so \
-	$(TARGET_OUT_VENDOR)/lib/libCamera_hi846mipiraw_Scene_Capture_4cell.so \
-	$(TARGET_OUT_VENDOR)/lib/libCamera_hi846mipiraw_Scene_Preview.so \
-	$(TARGET_OUT_VENDOR)/lib/libCamera_hi846mipiraw_Scene_Preview_4k.so \
-	$(TARGET_OUT_VENDOR)/lib/libCamera_hi846mipiraw_Video_1080.so \
-	$(TARGET_OUT_VENDOR)/lib/libCamera_hi846mipiraw_Video_4k.so \
 	$(TARGET_OUT_VENDOR)/lib/libaal_cust_func.so \
 	$(TARGET_OUT_VENDOR)/lib/libaalservice.so \
 	$(TARGET_OUT_VENDOR)/lib/libaiselector.so \
@@ -60,17 +35,6 @@ VENDOR_PLATFORM_LINKS := \
 	$(TARGET_OUT_VENDOR)/lib/libdpframework.so \
 	$(TARGET_OUT_VENDOR)/lib/libgpudataproducer.so \
 	$(TARGET_OUT_VENDOR)/lib/libmtk_drvb.so \
-	$(TARGET_OUT_VENDOR)/lib/libmtkcam.atmseventmgr.so \
-	$(TARGET_OUT_VENDOR)/lib/libmtkcam.eventcallback.so \
-	$(TARGET_OUT_VENDOR)/lib/libmtkcam_debugutils.so \
-	$(TARGET_OUT_VENDOR)/lib/libmtkcam_metadata.so \
-	$(TARGET_OUT_VENDOR)/lib/libmtkcam_modulehelper.so \
-	$(TARGET_OUT_VENDOR)/lib/libmtkcam_stdutils.so \
-	$(TARGET_OUT_VENDOR)/lib/libmtkcam_sysutils.so \
-	$(TARGET_OUT_VENDOR)/lib/libmtkcam_tuning_utils.so \
-	$(TARGET_OUT_VENDOR)/lib/libmtkcam_ulog.so \
-	$(TARGET_OUT_VENDOR)/lib/libneuralnetworks_sl_driver_mtk_prebuilt.so \
-	$(TARGET_OUT_VENDOR)/lib/libneuron_adapter_mgvi.so \
 	$(TARGET_OUT_VENDOR)/lib/libnir_neon_driver.so \
 	$(TARGET_OUT_VENDOR)/lib/libpq_cust_base.so \
 	$(TARGET_OUT_VENDOR)/lib/libpq_prot.so \
