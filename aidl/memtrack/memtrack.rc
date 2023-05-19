@@ -1,4 +1,0 @@
-service vendor.memtrack-default /vendor/bin/hw/android.hardware.memtrack-service.yunluo
-    class hal
-    user graphics
-    group system

@@ -181,7 +181,7 @@ PRODUCT_PACKAGES += \
 
 # Memtrack
 PRODUCT_PACKAGES += \
-    android.hardware.memtrack-service.yunluo
+    android.hardware.memtrack-service.mediatek-mali
 
 # Other common
 PRODUCT_PACKAGES += \
