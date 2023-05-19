@@ -228,12 +228,7 @@ PRODUCT_COPY_FILES += \
 
 # USB
 PRODUCT_PACKAGES += \
-	android.hardware.usb.gadget@1.0.vendor:64 \
-	android.hardware.usb.gadget@1.1.vendor:64 \
-	android.hardware.usb@1.0.vendor:64 \
-	android.hardware.usb@1.1.vendor:64 \
-	android.hardware.usb@1.2.vendor:64 \
-	android.hardware.usb@1.3.vendor:64
+    android.hardware.usb@1.3-service-mediatekv2
 
 # Wifi
 PRODUCT_PACKAGES += \

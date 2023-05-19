@@ -493,17 +493,14 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/libstagefrighthw.so
 
 # Mediatek
--vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml;MODULE=android.hardware.usb@1.2-service-mediatekv2.xml
 -vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 -vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek
--vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
 -vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
 -vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
 -vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 -vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 -vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 -vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc
--vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
 -vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
 -vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
 -vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
