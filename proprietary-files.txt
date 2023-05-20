@@ -717,9 +717,6 @@ vendor/lib/egl/egl.cfg
 -vendor/etc/thermal/thermal_policy_08.conf
 -vendor/etc/thermald-devices.conf
 
-# WiFi
--vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
-
 # Misc
 -vendor/bin/bip_ap
 -vendor/bin/bp_kmsetkey_ca
