@@ -952,7 +952,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/libvp9dec_sa.ca7.so
 -vendor/lib/libvpu5.so
 -vendor/lib/libvpud_vcodec.so
--vendor/lib/libwapi.so
 -vendor/lib/lib_iir.so
 -vendor/lib/lib_speech_enh.so
 -vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so
@@ -1137,8 +1136,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/libvow_ap_test_nn.so
 -vendor/lib64/libvpu.so
 -vendor/lib64/libvpu5.so
--vendor/lib64/libwapi.so
--vendor/lib64/libwifitest.so
 -vendor/lib64/libwpfa.so
 -vendor/lib64/libwvkeybox.so
 -vendor/lib64/lib_eara_io_scndet.so
