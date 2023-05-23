@@ -693,7 +693,6 @@ on zygote-start
 
 on early-boot
     write /proc/bootprof "INIT:early-boot"
-    verity_update_state
 
 on boot
     write /proc/bootprof "INIT:boot"
