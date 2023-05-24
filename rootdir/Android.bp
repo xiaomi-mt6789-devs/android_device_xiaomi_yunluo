@@ -87,13 +87,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init_connectivity.rc",
-    src: "etc/init/hw/init_connectivity.rc",
-    sub_dir: "init/hw",
-    vendor: true
-}
-
-prebuilt_etc {
     name: "fstab.mt6789",
     src: "etc/fstab.mt6789",
     vendor: true,

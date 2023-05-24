@@ -297,7 +297,6 @@ PRODUCT_PACKAGES += \
 	init.insmod.sh \
 	init.insmod.mtk.cfg \
 	init.cgroup.rc \
-	init.connectivity.common.rc \
 	init.connectivity.rc \
 	init.mi_thermald.rc \
 	init.mt6789.rc \
@@ -306,7 +305,6 @@ PRODUCT_PACKAGES += \
 	init.mtkgki.rc \
 	init.project.rc \
 	init.sensor_2_0.rc \
-	init_connectivity.rc \
 	ueventd.mt6789.rc \
 	fstab.mt6789 \
 	fstab.mt8781 \
