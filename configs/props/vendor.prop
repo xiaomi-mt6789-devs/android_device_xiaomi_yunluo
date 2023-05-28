@@ -74,15 +74,12 @@ ro.telephony.default_network=0,0,0,0
 ro.telephony.iwlan_operation_mode=AP-assisted
 ro.vendor.ap_info_monitor=0
 ro.vendor.bt.platform=connac1x
-ro.vendor.connsys.dedicated.log=1
-ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
 ro.vendor.md_auto_setup_ims=1
 ro.vendor.md_prop_ver=1
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.vendor.wlan.gen=gen4m_6789
-ro.vendor.wlan.standalone.log=y
 vendor.connsys.driver.ready=no
 
 # Display
