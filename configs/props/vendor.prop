@@ -83,7 +83,8 @@ ro.vendor.wlan.gen=gen4m_6789
 vendor.connsys.driver.ready=no
 
 # Display
-debug.renderengine.backend=skiagl
+debug.renderengine.backend=skiaglthreaded
+debug.hwui.skia_atrace_enabled=false
 debug.sf.enable_gl_backpressure=1
 debug.sf.late.sf.duration=29100000
 debug.sf.late.app.duration=21500000
