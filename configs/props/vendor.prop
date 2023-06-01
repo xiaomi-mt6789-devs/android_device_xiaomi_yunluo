@@ -83,6 +83,10 @@ vendor.connsys.driver.ready=no
 ro.vendor.builtin_fm_antenna_support=1
 
 # Display
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
 debug.renderengine.backend=skiaglthreaded
 debug.hwui.skia_atrace_enabled=false
 debug.sf.enable_gl_backpressure=1
