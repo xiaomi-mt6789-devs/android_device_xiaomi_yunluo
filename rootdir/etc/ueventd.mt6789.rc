@@ -189,3 +189,7 @@
 
 #MTK In-House TEE
 /dev/ttyACM0              0660   radio      radio
+
+# Charger
+/sys/class/power_supply/battery input_suspend 0660    system  system
+
