@@ -336,8 +336,12 @@
 -vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789
 -vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 -vendor/lib64/hw/hwcomposer.mtk_common.so
+-vendor/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so
+-vendor/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 -vendor/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 -vendor/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so
+-vendor/lib/hw/mt6789/gralloc.common.so
+-vendor/lib64/hw/mt6789/gralloc.common.so
 
 # Dolby
 -vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
@@ -984,7 +988,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/hq_asd.so
 -vendor/lib64/hw/kmsetkey.beanpod.so
 -vendor/lib64/hw/libSoftGatekeeper.so
--vendor/lib64/hw/mt6789/gralloc.common.so
 -vendor/lib64/hw/mt6789/vulkan.mali.so
 -vendor/lib64/libaal_cust.so
 -vendor/lib64/libaal_key.so

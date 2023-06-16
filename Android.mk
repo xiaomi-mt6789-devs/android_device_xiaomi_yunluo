@@ -19,6 +19,8 @@ VENDOR_PLATFORM_LINKS := \
 	$(TARGET_OUT_VENDOR)/bin/hw/camerahalserver \
 	$(TARGET_OUT_VENDOR)/lib/arm.graphics-V1-ndk_platform.so \
 	$(TARGET_OUT_VENDOR)/lib/egl/libGLES_mali.so \
+    $(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
+    $(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
 	$(TARGET_OUT_VENDOR)/lib/hw/gralloc.common.so \
 	$(TARGET_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
 	$(TARGET_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
