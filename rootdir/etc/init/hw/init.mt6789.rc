@@ -40,8 +40,6 @@ on late-init
     write /sys/kernel/rcu_expedited 1
 
 on charger
-    exec /system/bin/e2fsck -f -p /dev/block/by-name/cache
-    mount ext4 /dev/block/by-name/cache /cache rw wait
     chmod 0660 /dev/spm
     chown system system /dev/spm
     chmod 0666 /dev/kmsg
@@ -53,6 +51,7 @@ on charger
     restorecon_recursive /mnt/vendor/nvcfg
     write /sys/devices/platform/battery_meter/FG_daemon_log_level 7
     write /sys/bus/platform/devices/battery/FG_daemon_log_level 7
+    
     # Permissions for System Server and daemons.
     chown system system /sys/power/autosleep
     chown system system /sys/power/state
@@ -70,17 +69,9 @@ on charger
 
     chown system system /sys/class/leds/lcd-backlight/brightness
 
-    start vendor.light-default
-
-    # Stop bootprof
-    write /proc/bootprof "0"
-
 # initialize powerHAL when boot is completed
 on property:sys.boot_completed=1
     setprop vendor.mediatek.powerhal.init 1
-
-on early-fs
-    write /proc/bootprof "INIT:early-fs"
 
 on fs
     mount_all --early
@@ -92,7 +83,6 @@ on fs
 on late-fs
     wait_for_prop hwservicemanager.ready "true"
     mount_all --late
-
 
 on post-fs
     mkdir /mnt/vendor/persist/sensors 0755 system system
@@ -654,9 +644,6 @@ on property:sys.boot_completed=1
     write /sys/block/dm-3/queue/read_ahead_kb 128
     write /sys/block/dm-4/queue/read_ahead_kb 128
     write /sys/block/dm-5/queue/read_ahead_kb 128
-
-on property:sys.boot_completed=1
-    write /proc/bootprof 0
 
 # Battery info
 on property:persist.vendor.mediatek.fg.disable=1

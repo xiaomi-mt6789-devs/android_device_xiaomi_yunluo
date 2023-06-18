@@ -7,7 +7,6 @@ service insmod_sh /vendor/bin/init.insmod.sh /vendor/etc/init.insmod.mtk.cfg
 
 on early-init
     setprop vendor.all.modules.ready 0
-    write /proc/bootprof "modprobe: Load_Module_START"
     start insmod_sh
 
 # Connectivity modules configuration
