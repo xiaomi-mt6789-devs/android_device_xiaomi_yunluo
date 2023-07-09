@@ -160,8 +160,8 @@ ro.netflix.bsp_rev=MTK6789-35965-1
 
 # Versions
 ro.vendor.mediatek.platform=MT6789
-ro.vendor.mediatek.version.branch=alps-mp-t0.mssi1.tc8sp1
-ro.vendor.mediatek.version.release=alps-mp-t0.mp1.tc8sp1-V1
+ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc8sp2-cs1
+ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp2-cs1-xm.V1_xiaomi.tb.s0mp1.k6789v1.64_P10
 
 # Mediatek
 ro.vendor.mgk_name=mikrn
