@@ -1,0 +1,3 @@
+# dcxo
+genfscon sysfs /kernel/clk_buf/ u:object_r:sysfs_dcxo:s0
+
