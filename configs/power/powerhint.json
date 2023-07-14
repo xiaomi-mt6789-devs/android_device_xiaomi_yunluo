@@ -202,6 +202,24 @@
   ],
   "Actions": [
     {
+      "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
+      "Node": "PowerHALAudioState",
+      "Duration": 0,
+      "Value": "AUDIO_STREAMING_LOW_LATENCY"
+    },
+    {
+      "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 0,
+      "Value": "850000"
+    },
+    {
+      "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "998000"
+    },
+    {
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "PowerHALMainState",
       "Duration": 0,

@@ -1,0 +1,3 @@
+# Allow mtkpower stub service to call powerhal
+binder_call(mtk_hal_power, hal_power_default)
+
