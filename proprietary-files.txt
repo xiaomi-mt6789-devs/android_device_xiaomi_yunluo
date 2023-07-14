@@ -343,16 +343,6 @@
 -vendor/lib/hw/mt6789/gralloc.common.so
 -vendor/lib64/hw/mt6789/gralloc.common.so
 
-# Dolby
--vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
--vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
--vendor/etc/dolby/dax-default.xml
--vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
--vendor/lib/libstagefrightdolby.so
--vendor/lib64/libstagefrightdolby.so
--vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
--vendor/lib64/vendor.dolby.hardware.dms@2.0.so
-
 # Firmware
 vendor/firmware/BT_FW.cfg
 vendor/firmware/fm_cust.cfg
@@ -861,7 +851,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/libconnfem.so
 -vendor/lib/libcustom_nvram.so
 -vendor/lib/libcvsd_mtk.so
--vendor/lib/libdapparamstorage.so
 -vendor/lib/libDefaultFpsActor.so
 -vendor/lib/libfgauge_gm30.so
 -vendor/lib/libfile_op.so
@@ -889,8 +878,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/libladder.so
 -vendor/lib/liblogwrap_vendor.so
 -vendor/lib/libminiui.so
--vendor/lib/libmisound.so
--vendor/lib/libmisoundcrossfade.so
 -vendor/lib/libmml.so
 -vendor/lib/libmnetlink_v104.so
 -vendor/lib/libmp3dec_mtk.so
@@ -1020,10 +1007,7 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/libconnfem.so
 -vendor/lib64/libcustom_nvram.so
 -vendor/lib64/libcvsd_mtk.so
--vendor/lib64/libdapparamstorage.so
 -vendor/lib64/libDefaultFpsActor.so
--vendor/lib64/libdeccfg.so
--vendor/lib64/libdlbdsservice.so
 -vendor/lib64/libFaceCenterAlgo.so
 -vendor/lib64/libfacetracker.so
 -vendor/lib64/libfft_vendor.so
@@ -1065,8 +1049,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/liblogwrap_vendor.so
 -vendor/lib64/libminiui.so
 -vendor/lib64/libmipc.so
--vendor/lib64/libmisound.so
--vendor/lib64/libmisoundcrossfade.so
 -vendor/lib64/libmmagent.so
 -vendor/lib64/libmml.so
 -vendor/lib64/libmnetlink_v104.so
@@ -1212,10 +1194,6 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/mt6789/libpq_prot.so
 -vendor/lib64/mt6789/libstereoinfoaccessor_vsdof.so
 -vendor/lib64/mt6789/libvainr_model.so
--vendor/lib64/soundfx/libmisoundfx.so
--vendor/lib64/soundfx/libswdap.so
--vendor/lib64/soundfx/libswgamedap.so
--vendor/lib64/soundfx/libswvqe.so
 -vendor/lib64/VP9SecureVdecCA.so
 
 vendor/thh/ta/0102030405060708090a0b0c0d0e0f10.ta
