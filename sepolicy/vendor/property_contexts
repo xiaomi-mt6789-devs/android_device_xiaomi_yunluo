@@ -13,3 +13,6 @@ ro.vendor.sdr2hdr.by.layer.support u:object_r:vendor_displayfeature_prop:s0
 ro.vendor.standard.video.enable u:object_r:vendor_displayfeature_prop:s0
 vendor.hbm.enable u:object_r:vendor_displayfeature_prop:s0
 
+# Sensors
+persist.vendor.sensor. u:object_r:vendor_mtk_sensor_prop:s0
+
