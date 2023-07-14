@@ -1,3 +1,6 @@
 # Graphics
 type vendor_sysfs_displayfeature, fs_type, sysfs_type;
 
+# Health HAL
+type vendor_sysfs_usb_supply, fs_type, sysfs_type;
+
