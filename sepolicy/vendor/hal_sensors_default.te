@@ -1,0 +1,36 @@
+# Allow to read sensor devices
+allow hal_sensors_default hal_graphics_allocator_default:fd use;
+allow hal_sensors_default gpu_device:dir create_dir_perms;
+allow hal_sensors_default gpu_device:chr_file rw_file_perms;
+allow hal_sensors_default dri_device:chr_file rw_file_perms;
+allow hal_sensors_default ion_device:dir create_dir_perms;
+allow hal_sensors_default ion_device:chr_file rw_file_perms;
+allow hal_sensors_default system_file:dir r_dir_perms;
+allow hal_sensors_default sysfs_sensor:dir r_dir_perms;
+allow hal_sensors_default sysfs_sensor:file rw_file_perms;
+allow hal_sensors_default hwmsensor_device:chr_file r_file_perms;
+allow hal_sensors_default sensorlist_device:chr_file rw_file_perms;
+allow hal_sensors_default m_acc_misc_device:chr_file rw_file_perms;
+allow hal_sensors_default m_als_misc_device:chr_file rw_file_perms;
+allow hal_sensors_default m_ps_misc_device:chr_file rw_file_perms;
+allow hal_sensors_default m_mag_misc_device:chr_file rw_file_perms;
+allow hal_sensors_default m_gyro_misc_device:chr_file rw_file_perms;
+allow hal_sensors_default m_baro_misc_device:chr_file rw_file_perms;
+allow hal_sensors_default m_hmdy_misc_device:chr_file rw_file_perms;
+allow hal_sensors_default m_act_misc_device:chr_file rw_file_perms;
+allow hal_sensors_default m_pedo_misc_device:chr_file rw_file_perms;
+allow hal_sensors_default m_situ_misc_device:chr_file rw_file_perms;
+allow hal_sensors_default m_step_c_misc_device:chr_file rw_file_perms;
+allow hal_sensors_default m_fusion_misc_device:chr_file rw_file_perms;
+allow hal_sensors_default m_bio_misc_device:chr_file rw_file_perms;
+allow hal_sensors_default hf_manager_device:chr_file rw_file_perms;
+allow hal_sensors_default sensor_data_file:file create_file_perms;
+allow hal_sensors_default sensor_data_file:dir create_dir_perms;
+allow hal_sensors_default nvcfg_file:file create_file_perms;
+allow hal_sensors_default nvcfg_file:dir create_dir_perms;
+allow hal_sensors_default mnt_vendor_file:dir search;
+allow hal_sensors_default merged_hal_service:fd use;
+allow hal_sensors_default sysfs_mtk_nanohub_state:file r_file_perms;
+
+allow hal_sensors_default system_server:binder call;
+
