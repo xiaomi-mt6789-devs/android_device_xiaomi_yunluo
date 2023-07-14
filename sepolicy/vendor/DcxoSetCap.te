@@ -1,0 +1,3 @@
+# Allow dcxosetcap to read /proc/bootconfig
+allow DcxoSetCap proc_bootconfig:file r_file_perms;
+
