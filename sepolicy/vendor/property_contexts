@@ -1,6 +1,10 @@
 # Audio
 vendor.audiomediatek. u:object_r:vendor_audioserver_prop:s0
 
+# Camera
+vendor.camera. u:object_r:vendor_mtk_camera_prop:s0
+persist.vendor.camera. u:object_r:vendor_mtk_camera_prop:s0
+
 # Display
 persist.vendor.video.dfps.level u:object_r:vendor_displayfeature_prop:s0
 persist.vendor.dfps.level u:object_r:vendor_displayfeature_prop:s0
