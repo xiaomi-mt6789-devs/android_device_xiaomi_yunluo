@@ -1,0 +1,3 @@
+# Allow Keymint to set MTK TEEI Props
+set_prop(hal_keymint_default, vendor_mtk_soter_teei_prop)
+
