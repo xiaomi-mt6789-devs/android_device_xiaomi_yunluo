@@ -4,3 +4,6 @@ vendor_public_prop(vendor_audioserver_prop)
 # Display
 vendor_public_prop(vendor_displayfeature_prop)
 
+# Thermal HAL
+vendor_internal_prop(vendor_thermal_prop)
+
