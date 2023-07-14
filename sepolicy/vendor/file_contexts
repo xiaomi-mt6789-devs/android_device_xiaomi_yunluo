@@ -1,5 +1,7 @@
 # Thermals
 /(vendor|system/vendor)/bin/mi_thermald u:object_r:mi_thermald_exec:s0
+# Graphics
+/sys/devices/virtual/mi_display/disp_feature/disp-DSI-+[0-1](/.*)?         u:object_r:vendor_sysfs_displayfeature:s0
 
 # Health
 /(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.mt6789 u:object_r:hal_health_default_exec:s0
