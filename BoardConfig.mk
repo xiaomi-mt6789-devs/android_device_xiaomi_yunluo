@@ -185,7 +185,6 @@ BOARD_VNDK_VERSION := current
 
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Properties
