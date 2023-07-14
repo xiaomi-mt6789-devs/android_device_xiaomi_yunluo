@@ -2,3 +2,26 @@ type mi_thermald, domain;
 type mi_thermald_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(mi_thermald)
+
+# Define property contexts
+vendor_public_prop(vendor_thermal_normal_prop)
+
+allow mi_thermald mi_thermald:capability { chown fowner };
+
+# Allow mi_thermald to r/w thermal_core_data_file
+allow mi_thermald thermal_core_data_file:dir rw_dir_perms;
+allow mi_thermald thermal_core_data_file:file { create_file_perms rw_file_perms };
+
+r_dir_file(mi_thermald, sysfs_batteryinfo)
+r_dir_file(mi_thermald, sysfs_therm)
+r_dir_file(mi_thermald, sysfs_thermal)
+
+allow mi_thermald {
+    sysfs_batteryinfo
+    sysfs_devices_system_cpu
+    sysfs_therm
+    sysfs_thermal
+}:file rw_file_perms;
+
+set_prop(mi_thermald, vendor_thermal_normal_prop)
+

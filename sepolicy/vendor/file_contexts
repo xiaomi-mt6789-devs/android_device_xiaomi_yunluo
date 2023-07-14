@@ -1,5 +1,3 @@
-# Thermals
-/(vendor|system/vendor)/bin/mi_thermald u:object_r:mi_thermald_exec:s0
 # Graphics
 /sys/devices/virtual/mi_display/disp_feature/disp-DSI-+[0-1](/.*)?         u:object_r:vendor_sysfs_displayfeature:s0
 
@@ -10,6 +8,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.xiaomi u:object_r:hal_light_default_exec:s0
 
 # Thermals
+/(vendor|system/vendor)/bin/mi_thermald u:object_r:mi_thermald_exec:s0
 /vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.mediatek                     u:object_r:hal_thermal_default_exec:s0
 /vendor/bin/thermal_logd_mediatek                                                          u:object_r:init-thermal-logging-sh_exec:s0
 /vendor/bin/thermal_symlinks_mediatek                                                      u:object_r:init-thermal-symlinks-sh_exec:s0
