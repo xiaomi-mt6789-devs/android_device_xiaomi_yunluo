@@ -1,0 +1,4 @@
+# Allow lineage health hal to control battery input
+r_dir_file(hal_lineage_health_default, sysfs_batteryinfo)
+allow hal_lineage_health_default sysfs_batteryinfo:file rw_file_perms;
+
