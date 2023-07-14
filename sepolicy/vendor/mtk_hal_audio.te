@@ -1,0 +1,2 @@
+get_prop(mtk_hal_audio, vendor_audioserver_prop)
+
