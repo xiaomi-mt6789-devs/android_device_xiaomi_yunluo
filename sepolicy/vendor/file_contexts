@@ -14,3 +14,6 @@
 /vendor/bin/thermal_symlinks_mediatek                                                      u:object_r:init-thermal-symlinks-sh_exec:s0
 /dev/thermal(/.*)?                                                                u:object_r:thermal_link_device:s0
 
+# Touch panel gesture
+/sys/devices/virtual/touch/touch_dev/gesture_double_tap_state u:object_r:sysfs_tp_gesture:s0
+

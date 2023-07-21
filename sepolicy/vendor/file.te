@@ -8,3 +8,6 @@ type vendor_sysfs_usb_supply, fs_type, sysfs_type;
 type thermal_link_device, dev_type;
 type debugfs_thermal, debugfs_type, fs_type;
 
+# Touch gestures
+type sysfs_tp_gesture, fs_type, sysfs_type;
+
