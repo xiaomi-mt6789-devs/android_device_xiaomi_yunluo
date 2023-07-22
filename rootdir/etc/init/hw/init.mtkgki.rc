@@ -23,3 +23,8 @@ on property:vendor.connsys.driver.ready=yes
 on property:vendor.connsys.driver.ready=yes
     insmod /vendor/lib/modules/bt_drv_${ro.vendor.bt.platform}.ko
     chown bluetooth bluetooth /proc/driver/bt_dbg
+
+# load fmradio_drv
+on property:vendor.connsys.driver.ready=yes
+    insmod /vendor/lib/modules/fmradio_drv_${ro.vendor.fm.platform}.ko
+
