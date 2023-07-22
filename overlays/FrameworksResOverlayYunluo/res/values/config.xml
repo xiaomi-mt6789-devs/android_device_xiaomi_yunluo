@@ -113,67 +113,68 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>3.5</item>
-        <item>5.28</item>
-        <item>6.6</item>
-        <item>16.5</item>
-        <item>23.1</item>
-        <item>29.7</item>
-        <item>39.6</item>
-        <item>57.2</item>
-        <item>78.1</item>
-        <item>95.7</item>
-        <item>106.7</item>
-        <item>107.8</item>
-        <item>107.8</item>
-        <item>107.8</item>
-        <item>108.9</item>
-        <item>108.9</item>
-        <item>110</item>
-        <item>110</item>
-        <item>110</item>
-        <item>111.1</item>
-        <item>111.1</item>
-        <item>112.2</item>
-        <item>113.3</item>
-        <item>113.3</item>
-        <item>113.3</item>
-        <item>116.6</item>
-        <item>118.8</item>
-        <item>121</item>
-        <item>123.2</item>
-        <item>125.4</item>
-        <item>127.6</item>
-        <item>129.8</item>
-        <item>130.9</item>
-        <item>134.2</item>
+        <item>2.8</item>
+        <item>4.1</item>
+        <item>5.2</item>
+        <item>11.5</item>
+        <item>18.6</item>
+        <item>20.6</item>
+        <item>30.7</item>
+        <item>46.8</item>
+        <item>65.9</item>
+        <item>82.0</item>
+        <item>92.1</item>
+        <item>93.1</item>
+        <item>93.1</item>
+        <item>93.1</item>
+        <item>94.1</item>
+        <item>94.1</item>
+        <item>95.1</item>
+        <item>95.1</item>
+        <item>95.1</item>
+        <item>96.1</item>
+        <item>96.1</item>
+        <item>97.1</item>
+        <item>98.1</item>
+        <item>98.1</item>
+        <item>98.1</item>
+        <item>101.1</item>
+        <item>103.1</item>
+        <item>105.1</item>
+        <item>107.2</item>
+        <item>109.2</item>
+        <item>111.2</item>
+        <item>113.2</item>
+        <item>114.2</item>
+        <item>117.2</item>
+        <item>118.2</item>
+        <item>120.2</item>
+        <item>123.3</item>
+        <item>125.3</item>
+        <item>126.3</item>
+        <item>129.3</item>
+        <item>131.3</item>
+        <item>132.3</item>
         <item>135.3</item>
-        <item>137.5</item>
-        <item>140.8</item>
-        <item>143</item>
-        <item>144.1</item>
-        <item>147.4</item>
-        <item>149.6</item>
-        <item>150.7</item>
-        <item>154</item>
-        <item>156.2</item>
-        <item>158.4</item>
-        <item>185.9</item>
-        <item>215.6</item>
-        <item>244.2</item>
-        <item>272.8</item>
-        <item>297</item>
-        <item>330</item>
-        <item>352</item>
-        <item>368.5</item>
-        <item>440</item>
-        <item>458.37</item>
-        <item>476.63</item>
-        <item>495</item>
-        <item>513.37</item>
-        <item>513.37</item>
-        <item>513.37</item>
+        <item>137.3</item>
+        <item>139.4</item>
+        <item>154.5</item>
+        <item>181.7</item>
+        <item>210.9</item>
+        <item>235.0</item>
+        <item>256.2</item>
+        <item>286.4</item>
+        <item>300.5</item>
+        <item>315.6</item>
+        <item>360.0</item>
+        <item>418.8</item>
+        <item>435.5</item>
+        <item>452.3</item>
+        <item>469.1</item>
+        <item>485.8</item>
+        <item>500.0</item>
     </array>
+
 
     <!-- Array of output values for LCD backlight corresponding to the lux values
          in the config_autoBrightnessLevels array.  This array should have size one greater
@@ -345,6 +346,14 @@
     <integer-array name="config_screenDarkeningThresholds">
         <item>0</item>
     </integer-array>
+
+    <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
+         for debouncing the light sensor.  Different constants are used to debounce the light sensor
+         when adapting to brighter or darker environments.  This parameter controls how quickly
+         brightness changes occur in response to an observed change in light level that exceeds the
+         hysteresis threshold. -->
+    <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
 
     <!-- If true, the screen can be rotated via the accelerometer in all 4
          rotations as the default behavior. -->
