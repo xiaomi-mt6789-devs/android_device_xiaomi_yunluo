@@ -378,7 +378,7 @@
          PackageManager.FEATURE_TELEPHONY system feature, which is
          available on *any* device with a telephony radio, even if the
          device is data-only. -->
-    <bool name="config_voice_capable">true</bool>
+    <bool name="config_voice_capable">false</bool>
 
     <!-- Flag indicating whether the current device allows sms service.
          If true, this means that the device supports both sending and
@@ -388,13 +388,13 @@
 
          Note: Disable SMS also disable voicemail waiting sms,
                cell broadcasting sms, and MMS. -->
-    <bool name="config_sms_capable">true</bool>
+    <bool name="config_sms_capable">false</bool>
 
     <!-- Flag indicating whether the current device allows data.
          If true, this means that the device supports data connectivity through
          the telephony network.
          This can be overridden to false for devices that support voice and/or sms . -->
-    <bool name="config_mobile_data_capable">true</bool>
+    <bool name="config_mobile_data_capable">false</bool>
 
     <!-- This string array should be overridden by the device to present a list of network
          attributes.  This is used by the connectivity manager to decide which networks can coexist
