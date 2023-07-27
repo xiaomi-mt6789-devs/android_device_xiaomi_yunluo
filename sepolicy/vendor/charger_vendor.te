@@ -1,0 +1,10 @@
+r_dir_file(charger_vendor, sysfs_batteryinfo)
+r_dir_file(charger_vendor, vendor_sysfs_usb_supply)
+r_dir_file(charger_vendor, sysfs_leds)
+
+allow charger_vendor { sysfs_leds sysfs_batteryinfo vendor_sysfs_usb_supply }:file rw_file_perms;
+
+r_dir_file(charger_vendor, gpu_device)
+allow charger_vendor gpu_device:chr_file rw_file_perms;
+allow charger_vendor dri_device:chr_file rw_file_perms;
+
