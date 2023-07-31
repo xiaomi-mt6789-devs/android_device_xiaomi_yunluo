@@ -64,7 +64,8 @@ function blob_fixup() {
             ;;
         vendor/lib64/libspeech_enh_lib.so|\
         vendor/lib64/hw/sound_trigger.primary.mt6789.so|\
-        vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so)
+        vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so|\
+        vendor/lib64/libwifi-hal-mtk.so)
             "${PATCHELF}" --set-soname "$(basename "${1}")" "${2}"
             ;;
         vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc)

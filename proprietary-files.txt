@@ -995,5 +995,6 @@ vendor/thh/ta/isee_model.json
 -vendor/etc/init/tetheroffloadservice.rc
 -vendor/etc/init/wlan_assistant.rc
 -vendor/lib64/libconnfem.so
+-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 -vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
