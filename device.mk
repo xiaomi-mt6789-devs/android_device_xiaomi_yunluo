@@ -204,7 +204,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.mediatek-libperfmgr
+    android.hardware.power-service.xiaomi-libperfmgr
 
 # Power configurations
 PRODUCT_COPY_FILES += \

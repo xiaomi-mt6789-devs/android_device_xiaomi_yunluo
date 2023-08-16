@@ -7,6 +7,9 @@
 # Lights
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.xiaomi u:object_r:hal_light_default_exec:s0
 
+# Power
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr u:object_r:hal_power_default_exec:s0
+
 # Thermals
 /(vendor|system/vendor)/bin/mi_thermald u:object_r:mi_thermald_exec:s0
 
