@@ -13,7 +13,6 @@ include $(CLEAR_VARS)
 
 # Libraries / Binaries linked to <dir>/<platform>/<lib>.so
 VENDOR_PLATFORM_LINKS := \
-	$(TARGET_OUT_VENDOR)/bin/jpegtool \
 	$(TARGET_OUT_VENDOR)/bin/v3avpud.mt6789 \
 	$(TARGET_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789 \
 	$(TARGET_OUT_VENDOR)/bin/hw/camerahalserver \
@@ -22,25 +21,14 @@ VENDOR_PLATFORM_LINKS := \
     $(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     $(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
 	$(TARGET_OUT_VENDOR)/lib/hw/gralloc.common.so \
-	$(TARGET_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
-	$(TARGET_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
-	$(TARGET_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so \
 	$(TARGET_OUT_VENDOR)/lib/hw/vulkan.mali.so \
-	$(TARGET_OUT_VENDOR)/lib/libaal_cust_func.so \
 	$(TARGET_OUT_VENDOR)/lib/libaalservice.so \
 	$(TARGET_OUT_VENDOR)/lib/libaiselector.so \
-	$(TARGET_OUT_VENDOR)/lib/libcam.hal3a.log.so \
-	$(TARGET_OUT_VENDOR)/lib/libcam.halsensor.hwintegration.so \
-	$(TARGET_OUT_VENDOR)/lib/libcamalgo.platform2.so \
-	$(TARGET_OUT_VENDOR)/lib/libcameracustom.lens.so \
-	$(TARGET_OUT_VENDOR)/lib/libcameracustom.so \
 	$(TARGET_OUT_VENDOR)/lib/libdpframework.so \
 	$(TARGET_OUT_VENDOR)/lib/libgpudataproducer.so \
 	$(TARGET_OUT_VENDOR)/lib/libmtk_drvb.so \
-	$(TARGET_OUT_VENDOR)/lib/libnir_neon_driver.so \
 	$(TARGET_OUT_VENDOR)/lib/libpq_cust_base.so \
 	$(TARGET_OUT_VENDOR)/lib/libpq_prot.so \
-	$(TARGET_OUT_VENDOR)/lib/libpqparamparser.so \
 	$(TARGET_OUT_VENDOR)/lib/libvcodec_utility.so \
 	$(TARGET_OUT_VENDOR)/lib/libvcodec_utility_v3a.so \
 	$(TARGET_OUT_VENDOR)/lib/libvcodecdrv.so \
@@ -99,7 +87,6 @@ VENDOR_PLATFORM_LINKS := \
 	$(TARGET_OUT_VENDOR)/lib64/libCamera_hi846mipiraw_Scene_Preview_4k.so \
 	$(TARGET_OUT_VENDOR)/lib64/libCamera_hi846mipiraw_Video_1080.so \
 	$(TARGET_OUT_VENDOR)/lib64/libCamera_hi846mipiraw_Video_4k.so \
-	$(TARGET_OUT_VENDOR)/lib64/libDR.so \
 	$(TARGET_OUT_VENDOR)/lib64/libSonyIMX230PdafLibrary.so \
 	$(TARGET_OUT_VENDOR)/lib64/libSonyIMX230PdafLibraryWrapper.so \
 	$(TARGET_OUT_VENDOR)/lib64/libSonyIMX338PdafLibrary.so \
@@ -112,15 +99,9 @@ VENDOR_PLATFORM_LINKS := \
 	$(TARGET_OUT_VENDOR)/lib64/libaaa_ltmx.so \
 	$(TARGET_OUT_VENDOR)/lib64/libaal_cust_func.so \
 	$(TARGET_OUT_VENDOR)/lib64/libaalservice.so \
-	$(TARGET_OUT_VENDOR)/lib64/libacdk.so \
 	$(TARGET_OUT_VENDOR)/lib64/libaiawb_moon.so \
 	$(TARGET_OUT_VENDOR)/lib64/libaiawb_p1ggm.so \
 	$(TARGET_OUT_VENDOR)/lib64/libaiawb_sun.so \
-	$(TARGET_OUT_VENDOR)/lib64/libaibc_tuning.so \
-	$(TARGET_OUT_VENDOR)/lib64/libaibc_tuning_p2.so \
-	$(TARGET_OUT_VENDOR)/lib64/libaibc_tuning_p3.so \
-	$(TARGET_OUT_VENDOR)/lib64/libaibc_tuning_p4.so \
-	$(TARGET_OUT_VENDOR)/lib64/libaidepth_tuning.so \
 	$(TARGET_OUT_VENDOR)/lib64/libaiselector.so \
 	$(TARGET_OUT_VENDOR)/lib64/libcam.afhal.so \
 	$(TARGET_OUT_VENDOR)/lib64/libcam.chdr.so \
@@ -184,7 +165,6 @@ VENDOR_PLATFORM_LINKS := \
 	$(TARGET_OUT_VENDOR)/lib64/libfeature_lmv.so \
 	$(TARGET_OUT_VENDOR)/lib64/libfeature_rss.so \
 	$(TARGET_OUT_VENDOR)/lib64/libfeatureiodrv_mem.so \
-	$(TARGET_OUT_VENDOR)/lib64/libgpudataproducer.so \
 	$(TARGET_OUT_VENDOR)/lib64/libimageio.so \
 	$(TARGET_OUT_VENDOR)/lib64/libimageio_plat_drv.so \
 	$(TARGET_OUT_VENDOR)/lib64/libimageio_plat_pipe.so \
@@ -263,7 +243,6 @@ VENDOR_PLATFORM_LINKS := \
 	$(TARGET_OUT_VENDOR)/lib64/libpq_prot.so \
 	$(TARGET_OUT_VENDOR)/lib64/libpqparamparser.so \
 	$(TARGET_OUT_VENDOR)/lib64/libstereoinfoaccessor_vsdof.so \
-	$(TARGET_OUT_VENDOR)/lib64/libvainr_model.so \
 	$(TARGET_OUT_VENDOR)/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
 
 # Gatekeeper symlinks

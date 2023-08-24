@@ -62,8 +62,7 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "android.hardware.secureclock-V1-ndk_platform.so" "android.hardware.secureclock-V1-ndk.so" "${2}"
             "${PATCHELF}" --replace-needed "android.hardware.sharedsecret-V1-ndk_platform.so" "android.hardware.sharedsecret-V1-ndk.so" "${2}"
             ;;
-        vendor/lib*/libspeech_enh_lib.so|\
-        vendor/lib64/hw/power.mt6789.so|\
+        vendor/lib64/libspeech_enh_lib.so|\
         vendor/lib64/hw/sound_trigger.primary.mt6789.so|\
         vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so)
             "${PATCHELF}" --set-soname "$(basename "${1}")" "${2}"
@@ -77,8 +76,6 @@ function blob_fixup() {
         vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
             "${PATCHELF}" --replace-needed "libavservices_minijail_vendor.so" "libavservices_minijail.so" "${2}"
             ;;
-        vendor/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so)
-            ;&
         vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
