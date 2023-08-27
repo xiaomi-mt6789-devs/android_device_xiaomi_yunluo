@@ -239,6 +239,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-mediatekv2
 
+# Enable audio accessory support
+$(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,true)
+
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy \
