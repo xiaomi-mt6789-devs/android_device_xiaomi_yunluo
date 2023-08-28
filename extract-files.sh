@@ -59,8 +59,8 @@ function blob_fixup() {
     case "${1}" in
         vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod)
             "${PATCHELF}" --remove-needed "android.hardware.security.keymint-V1-ndk_platform.so" "${2}"
-            "${PATCHELF}" --replace-needed "android.hardware.secureclock-V1-ndk_platform.so" "android.hardware.secureclock-V1-ndk.so" "${2}"
-            "${PATCHELF}" --replace-needed "android.hardware.sharedsecret-V1-ndk_platform.so" "android.hardware.sharedsecret-V1-ndk.so" "${2}"
+            "${PATCHELF}" --replace-needed "android.hardware.security.secureclock-V1-ndk_platform.so" "android.hardware.security.secureclock-V1-ndk.so" "${2}"
+            "${PATCHELF}" --replace-needed "android.hardware.security.sharedsecret-V1-ndk_platform.so" "android.hardware.security.sharedsecret-V1-ndk.so" "${2}"
             ;;
         vendor/lib64/libspeech_enh_lib.so|\
         vendor/lib64/hw/sound_trigger.primary.mt6789.so|\
