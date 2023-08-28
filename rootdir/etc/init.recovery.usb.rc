@@ -1,0 +1,7 @@
+on init
+    setprop sys.usb.configfs 1
+    setprop sys.usb.ffs.aio_compat 1
+    setprop sys.usb.ffs.ready 1
+    setprop sys.usb.controller "musb-hdrc"
+    setprop vendor.usb.controller "musb-hdrc"
+

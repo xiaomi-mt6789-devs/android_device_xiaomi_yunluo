@@ -106,3 +106,12 @@ prebuilt_etc {
     src: "etc/ueventd.mt6789.rc",
     vendor: true
 }
+
+prebuilt_etc {
+    name: "init.recovery.usb.rc",
+    src: "etc/init.recovery.usb.rc",
+    recovery: true,
+    sub_dir: "init"
+}
+
+

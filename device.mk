@@ -316,7 +316,8 @@ PRODUCT_PACKAGES += \
 	fstab.mt6789 \
 	fstab.mt8781 \
 	fstab.mt8781.vendor_ramdisk \
-	fstab.mt6789.vendor_ramdisk
+	fstab.mt6789.vendor_ramdisk \
+	init.recovery.usb.rc
 
 # Audio Configuration
 PRODUCT_COPY_FILES += \
