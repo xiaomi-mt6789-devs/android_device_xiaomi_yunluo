@@ -8,7 +8,19 @@ on charger
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq 0
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq 0
     write /sys/class/devfreq/mtk-dvfsrc-devfreq/userspace/set_freq 0
+    
+    # Lock to lowest frequency on charger mode
+    write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor powersave
+    write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor powersave
 
+    # Offline all cores except cpu0
+    write /sys/devices/system/cpu/cpu1/online 0
+    write /sys/devices/system/cpu/cpu2/online 0
+    write /sys/devices/system/cpu/cpu3/online 0
+    write /sys/devices/system/cpu/cpu4/online 0
+    write /sys/devices/system/cpu/cpu5/online 0
+    write /sys/devices/system/cpu/cpu6/online 0
+    write /sys/devices/system/cpu/cpu7/online 0
 
 on post-fs-data
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor sugov_ext
