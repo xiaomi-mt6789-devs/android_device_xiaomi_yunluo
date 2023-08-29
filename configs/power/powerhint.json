@@ -170,14 +170,7 @@
     {
       "Name": "FBTBHROPP",
       "Path": "/sys/module/mtk_fpsgo/parameters/bhr_opp",
-      "Values": ["1", "3", "6", "9", "12", "15"],
-      "ResetOnInit": true,
-      "DefaultIndex": 0
-    },
-    {
-      "Name": "CPUTaskTurboFeats",
-      "Path": "/sys/module/task_turbo/parameters/feats",
-      "Values": ["0", "15"],
+      "Values": ["1", "3", "6", "9", "12", "15", "31"],
       "ResetOnInit": true,
       "DefaultIndex": 0
     },
@@ -325,13 +318,7 @@
       "PowerHint": "INTERACTION",
       "Node": "FBTBHROPP",
       "Duration": 0,
-      "Value": "15"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUTaskTurboFeats",
-      "Duration": 1000,
-      "Value": "15"
+      "Value": "31"
     },
     {
       "PowerHint": "LAUNCH",

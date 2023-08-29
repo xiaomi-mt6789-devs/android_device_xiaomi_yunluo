@@ -16,9 +16,6 @@ allow hal_power_default sysfs_mtk_fpsgo:file w_file_perms;
 r_dir_file(hal_power_default, sysfs_ged)
 allow hal_power_default sysfs_ged:file w_file_perms;
 
-# Allow libperfmgr to control task turbo
-r_dir_file(hal_power_default, sysfs_task_turbo)
-allow hal_power_default sysfs_task_turbo:file w_file_perms;
 
 # Allow libperfmgr to control CPU DMA Latency
 allow hal_power_default cpu_dma_latency_device:chr_file w_file_perms;
