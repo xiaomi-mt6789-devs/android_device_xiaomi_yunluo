@@ -13,6 +13,9 @@ on charger
 on post-fs-data
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor sugov_ext
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor sugov_ext
+
+on init
+    write /sys/devices/platform/soc/11270000.ufshci/clkgate_enable 0
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
 
     # boot perf. tune
@@ -28,6 +31,7 @@ on post-fs-data
     write /dev/cpuctl/background/cpu.uclamp.latency_sensitive 1
 
 on property:sys.boot_completed=1
+    write /sys/devices/platform/soc/11270000.ufshci/clkgate_enable 1
     write /proc/sys/kernel/sched_migration_cost_ns 200000
 
     # restore boot perf. tune
