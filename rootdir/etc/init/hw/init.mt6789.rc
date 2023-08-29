@@ -6,10 +6,6 @@ import /vendor/etc/init/hw/init.sensor_2_0.rc
 import /vendor/etc/init/hw/init.cgroup.rc
 import /vendor/etc/init/hw/init.modem.rc
 
-on early-init
-    # initialize vendor.all.modules.ready to 1 here to prevent NOT GKI project blocked
-    setprop vendor.all.modules.ready 1
-
 # Keep debugfs mounted in non-user builds
 on early-init && property:ro.build.type=eng
     mount debugfs debugfs /sys/kernel/debug
