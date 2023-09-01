@@ -86,6 +86,9 @@ function blob_fixup() {
         vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc)
             sed -i '/vts/Q' "$2"
             ;;
+        vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc)
+            sed -i 's/start/enable/' "$2"
+            ;;
     esac
 }
 
