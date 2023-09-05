@@ -219,6 +219,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
+# Rebalance interrupts
+PRODUCT_PACKAGES += \
+    rebalance_interrupts-vendor.mediatek
+
 # Sensors
 PRODUCT_PACKAGES += \
 	android.frameworks.sensorservice@1.0.vendor:64 \
