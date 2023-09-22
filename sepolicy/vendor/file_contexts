@@ -9,10 +9,6 @@
 
 # Thermals
 /(vendor|system/vendor)/bin/mi_thermald u:object_r:mi_thermald_exec:s0
-/vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.mediatek                     u:object_r:hal_thermal_default_exec:s0
-/vendor/bin/thermal_logd_mediatek                                                          u:object_r:init-thermal-logging-sh_exec:s0
-/vendor/bin/thermal_symlinks_mediatek                                                      u:object_r:init-thermal-symlinks-sh_exec:s0
-/dev/thermal(/.*)?                                                                u:object_r:thermal_link_device:s0
 
 # Touch panel gesture
 /sys/devices/virtual/touch/touch_dev/gesture_double_tap_state u:object_r:sysfs_tp_gesture:s0

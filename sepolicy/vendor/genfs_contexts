@@ -13,9 +13,6 @@ genfscon sysfs /devices/platform/soc/13000000.mali u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/soc/11017000.i2c/i2c-5/5-006a/power_supply/usb u:object_r:vendor_sysfs_usb_supply:s0
 genfscon sysfs /devices/platform/soc/11017000.i2c/i2c-5/5-006a/power_supply/xm_charger u:object_r:vendor_sysfs_usb_supply:s0
 
-# Thermal
-genfscon sysfs /class/thermal u:object_r:sysfs_thermal:s0
-
 # Wakeup nodes
 genfscon sysfs /devices/platform/soc/10228000.gce/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-rtc/rtc/rtc0/alarmtimer.1.auto/wakeup u:object_r:sysfs_wakeup:s0

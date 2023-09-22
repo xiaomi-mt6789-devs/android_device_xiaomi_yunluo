@@ -19,6 +19,3 @@ vendor.sys.thermal.data.path u:object_r:vendor_thermal_normal_prop:s0
 # Sensors
 persist.vendor.sensor. u:object_r:vendor_mtk_sensor_prop:s0
 
-# Thermal
-vendor.thermal. u:object_r:vendor_thermal_prop:s0
-
