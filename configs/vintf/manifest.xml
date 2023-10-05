@@ -350,8 +350,5 @@
         </interface>
         <fqname>@1.2::IMTService/default</fqname>
     </hal>
-    <sepolicy>
-        <version>33.0</version>
-    </sepolicy>
     <kernel target-level="6" />
 </manifest>
