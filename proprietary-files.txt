@@ -482,14 +482,14 @@
 -vendor/lib/liboemcrypto.so
 -vendor/lib/libtlcWidevineModularDrm.so
 -vendor/lib/liburee_meta_drmkeyinstall.so
--vendor/lib/libwvhidl.so;REPLACEDEP=libprotobuf-cpp-lite-3.9.1:libprotobuf-cpp-lite
--vendor/lib/mediadrm/libwvdrmengine.so;REPLACEDEP=libprotobuf-cpp-lite-3.9.1:libprotobuf-cpp-lite
+-vendor/lib/libwvhidl.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
+-vendor/lib/mediadrm/libwvdrmengine.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
 -vendor/lib64/liboemcrypto.so
 -vendor/lib64/libtlcWidevineModularDrm.so
 -vendor/lib64/liburee_meta_drmkeyinstall.so
--vendor/lib64/libwvhidl.so;REPLACEDEP=libprotobuf-cpp-lite-3.9.1:libprotobuf-cpp-lite
+-vendor/lib64/libwvhidl.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
 -vendor/lib64/libwvkeybox.so
--vendor/lib64/mediadrm/libwvdrmengine.so;REPLACEDEP=libprotobuf-cpp-lite-3.9.1:libprotobuf-cpp-lite
+-vendor/lib64/mediadrm/libwvdrmengine.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
 
 # Display configs
 -vendor/etc/AbnormalDisplayLog_dynamic.xml
