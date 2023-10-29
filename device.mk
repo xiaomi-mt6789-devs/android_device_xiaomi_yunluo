@@ -249,7 +249,7 @@ $(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy \
+    android.hardware.wifi-service \
     wpa_supplicant \
     hostapd \
 	libkeystore-wifi-hidl:64 \
