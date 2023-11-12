@@ -674,7 +674,7 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/mt6789/libmtk_drvb.so
 
 # Media (C2)
--vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
+-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b;NOCHECK
 -vendor/etc/VideoLog_dynamic.xml
 -vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 -vendor/etc/mtk_platform_codecs_config.xml
