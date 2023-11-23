@@ -45,13 +45,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.cgroup.rc",
-    src: "etc/init/hw/init.cgroup.rc",
-    sub_dir: "init/hw",
-    vendor: true
-}
-
-prebuilt_etc {
     name: "init.connectivity.rc",
     src: "etc/init/hw/init.connectivity.rc",
     sub_dir: "init/hw",
@@ -75,6 +68,13 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.mt6789.rc",
     src: "etc/init/hw/init.mt6789.rc",
+    sub_dir: "init/hw",
+    vendor: true
+}
+
+prebuilt_etc {
+    name: "init.mt6789.power.rc",
+    src: "etc/init/hw/init.mt6789.power.rc",
     sub_dir: "init/hw",
     vendor: true
 }
