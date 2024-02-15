@@ -36,6 +36,15 @@ on post-fs
     mount functionfs mtp /dev/usb-ffs/mtp rmode=0770,fmode=0660,uid=1024,gid=1024,no_disconnect=1
     mount functionfs ptp /dev/usb-ffs/ptp rmode=0770,fmode=0660,uid=1024,gid=1024,no_disconnect=1
 
+    # Modify class/subclass/protocol for mtk_rndis.gs4
+    # Remote NDIS: Class: Wireless Controller (0xe0), Subclass: 0x1, Protocol: 0x3
+    write /config/usb_gadget/g1/functions/mtk_rndis.gs4/class e0
+    write /config/usb_gadget/g1/functions/mtk_rndis.gs4/subclass 01
+    write /config/usb_gadget/g1/functions/mtk_rndis.gs4/protocol 03
+    write /config/usb_gadget/g1/functions/mtk_rndis.gs4/os_desc/interface.ncm/compatible_id RNDIS
+    write /config/usb_gadget/g1/functions/mtk_rndis.gs4/ifname rndis%d
+    setprop vendor.usb.rndis.config mtk_rndis.gs4
+
     # chown file/folder permission
     chown system system /config/usb_gadget/
     chown system system /config/usb_gadget/g1
@@ -88,18 +97,19 @@ on post-fs
     chown system system /config/usb_gadget/g1/functions/ptp.gs1/os_desc/interface.MTP
     chown system system /config/usb_gadget/g1/functions/ptp.gs1/os_desc/interface.MTP/compatible_id
     chown system system /config/usb_gadget/g1/functions/ptp.gs1/os_desc/interface.MTP/sub_compatible_id
-    chown system system /config/usb_gadget/g1/functions/rndis.gs4
-    chown system system /config/usb_gadget/g1/functions/rndis.gs4/class
-    chown system system /config/usb_gadget/g1/functions/rndis.gs4/dev_addr
-    chown system system /config/usb_gadget/g1/functions/rndis.gs4/host_addr
-    chown system system /config/usb_gadget/g1/functions/rndis.gs4/ifname
-    chown system system /config/usb_gadget/g1/functions/rndis.gs4/os_desc
-    chown system system /config/usb_gadget/g1/functions/rndis.gs4/os_desc/interface.rndis
-    chown system system /config/usb_gadget/g1/functions/rndis.gs4/os_desc/interface.rndis/compatible_id
-    chown system system /config/usb_gadget/g1/functions/rndis.gs4/os_desc/interface.rndis/sub_compatible_id
-    chown system system /config/usb_gadget/g1/functions/rndis.gs4/protocol
-    chown system system /config/usb_gadget/g1/functions/rndis.gs4/qmult
-    chown system system /config/usb_gadget/g1/functions/rndis.gs4/subclass
+    chown system system /config/usb_gadget/g1/functions/mtk_rndis.gs4
+    chown system system /config/usb_gadget/g1/functions/mtk_rndis.gs4/class
+    chown system system /config/usb_gadget/g1/functions/mtk_rndis.gs4/dev_addr
+    chown system system /config/usb_gadget/g1/functions/mtk_rndis.gs4/host_addr
+    chown system system /config/usb_gadget/g1/functions/mtk_rndis.gs4/ifname
+    chown system system /config/usb_gadget/g1/functions/mtk_rndis.gs4/os_desc
+    chown system system /config/usb_gadget/g1/functions/mtk_rndis.gs4/os_desc/interface.rndis
+    chown system system /config/usb_gadget/g1/functions/mtk_rndis.gs4/os_desc/interface.rndis/compatible_id
+    chown system system /config/usb_gadget/g1/functions/mtk_rndis.gs4/os_desc/interface.rndis/sub_compatible_id
+    chown system system /config/usb_gadget/g1/functions/mtk_rndis.gs4/protocol
+    chown system system /config/usb_gadget/g1/functions/mtk_rndis.gs4/qmult
+    chown system system /config/usb_gadget/g1/functions/mtk_rndis.gs4/subclass
+    chown system system /config/usb_gadget/g1/functions/mtk_rndis.gs4/subclass
     chown system system /config/usb_gadget/g1/idProduct
     chown system system /config/usb_gadget/g1/idVendor
     chown system system /config/usb_gadget/g1/max_speed
