@@ -81,6 +81,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl:64
 
+# For updating preloader
+PRODUCT_PACKAGES += \
+    create_pl_dev \
+    create_pl_dev.recovery
+
 # Boot control (A/B Updates)
 PRODUCT_PACKAGES += \
     com.android.hardware.boot \
