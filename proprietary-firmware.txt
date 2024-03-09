@@ -1,0 +1,13 @@
+# Firmware from yunluo V816.0.7.0.ULYMIXM fastboot package
+dpm.img;AB
+gz.img;AB
+lk.img;AB
+logo.bin:logo.img;AB
+mcupm.img;AB
+pi_img.img;AB
+preloader_yunluo.bin:preloader_raw.img;AB
+scp.img;AB
+spmfw.img;AB
+sspm.img;AB
+tee.img;AB
+
