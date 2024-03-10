@@ -33,8 +33,8 @@ on post-fs-data
     write /proc/sys/vm/page-cluster 3
     write /proc/sys/vm/swappiness 100
     write /sys/kernel/mm/swap/vma_ra_enabled true
-
     write /sys/block/zram0/comp_algorithm lz4
+    swapon_all /vendor/etc/fstab.mt6789
 
     # boot time fs tune
     write /sys/devices/platform/soc/11270000.ufshci/clkgate_enable 0
