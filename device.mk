@@ -241,7 +241,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays (Lineage)
 PRODUCT_PACKAGES += \
-    LineageSDKOverlayYunluo
+    LineageSDKOverlayYunluo \
+    PowerOffAlarmOverlayYunluo
 
 # Init scripts
 PRODUCT_PACKAGES += \
