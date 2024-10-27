@@ -311,6 +311,15 @@
       "Path": "vendor.powerhal.audio",
       "Values": ["AUDIO_STREAMING_LOW_LATENCY", ""],
       "Type": "Property"
+    },
+    {
+      "Name": "RestrictedCpuset",
+      "Path": "/dev/cpuset/restricted/cpus",
+      "Values": [
+        "0-3",
+        "0-7"
+      ],
+      "ResetOnInit": false
     }
   ],
   "Actions": [
@@ -451,6 +460,18 @@
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
       "Value": "1000000"
+    },
+    {
+      "PowerHint": "DEVICE_IDLE",
+      "Node": "RestrictedCpuset",
+      "Duration": 0,
+      "Value": "0-3"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "RestrictedCpuset",
+      "Duration": 0,
+      "Value": "0-3"
     }
   ]
 }
