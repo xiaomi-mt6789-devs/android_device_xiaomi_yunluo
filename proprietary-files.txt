@@ -1,4 +1,4 @@
-# Unpinned blobs from missi_pad_global-user 14 UP1A.231005.007 V816.0.6.0.ULYMIXM release-keys
+# Unpinned blobs from missi_pad_global-user 14 UP1A.231005.007 V816.0.7.0.ULYMIXM release-keys
 
 # AAL
 vendor/lib64/mt6789/libaal_cust_func.so
