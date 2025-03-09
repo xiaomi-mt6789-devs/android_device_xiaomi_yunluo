@@ -110,6 +110,12 @@ blob_fixups: blob_fixups_user_type = {
     .patchelf_version(patchelf_version)
     .add_needed("libshim_sensors.so")
     .replace_needed("libutils.so", "libutils-v32.so"),
+    (
+    "vendor/lib64/libnvram.so",
+    "vendor/lib64/libtflite_mtk.so",
+    "vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so"
+    ): blob_fixup()
+    .add_needed('libbase_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
