@@ -90,7 +90,6 @@ vendor.connsys.driver.ready=no
 # Display
 debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1
-debug.renderengine.backend=skiagl
 debug.sf.disable_backpressure=1
 debug.sf.early.app.duration=20000000
 debug.sf.early.sf.duration=27600000
