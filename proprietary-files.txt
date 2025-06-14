@@ -581,7 +581,7 @@ vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
 # Keymint
-vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod
+vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod;DISABLE_DEPS
 vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service.beanpod.xml
 vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.beanpod.xml

@@ -108,7 +108,19 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.hardware_keystore.xml
+    android.hardware.hardware_keystore_V3.xml
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    libkeymaster_messages.vendor \
+    libkeymaster_portable.vendor
+
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-V3-ndk.vendor \
+    lib_android_keymaster_keymint_utils.vendor \
+    libcppbor_external.vendor \
+    libkeymint.vendor
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
