@@ -65,7 +65,6 @@ on fs
     mount_all --early
 
 on late-fs
-    wait_for_prop hwservicemanager.ready "true"
     mount_all --late
 
 on post-fs
