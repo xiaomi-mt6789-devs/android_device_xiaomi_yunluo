@@ -255,7 +255,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     FrameworksResOverlayYunluo \
     SettingsResOverlayYunluo \
-    TetheringResOverlayYunluo \
+    NcmTetheringOverlay \
     WifiResOverlayYunluo
 
 # Overlays (Lineage)
