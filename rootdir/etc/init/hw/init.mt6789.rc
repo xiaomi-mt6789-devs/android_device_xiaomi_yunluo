@@ -68,8 +68,6 @@ on late-fs
     mount_all --late
 
 on post-fs
-    write /proc/bootprof "INIT:post-fs"
-
     mkdir /mnt/vendor/persist/sensors 0755 system system
 
     chown system system /mnt/vendor/protect_f
@@ -597,12 +595,4 @@ on property:persist.vendor.mediatek.fg.force25c=0
 
 on property:persist.vendor.mediatek.fg.log.enable=1
     write /dev/gauge/FG_daemon_log_level 7
-
-# reset mdmode when modem crash happens in ATM
-on property:vendor.mtk.md1.status=reset
-    setprop persist.vendor.atm.mdmode normal
-
-# MTK fast charging support
-on property:persist.vendor.mediatek.fast_charging.support=*
-    write /sys/devices/platform/charger/fast_chg_indicator ${persist.vendor.mediatek.fast_charging.support}
 

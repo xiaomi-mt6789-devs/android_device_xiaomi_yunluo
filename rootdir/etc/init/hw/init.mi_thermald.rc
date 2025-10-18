@@ -1,6 +1,7 @@
 on charger
     wait /sys/class/power_supply/usb/type
     start mi_thermald
+
 on boot
     wait /sys/class/power_supply/usb/type
     start mi_thermald

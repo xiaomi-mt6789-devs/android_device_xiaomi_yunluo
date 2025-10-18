@@ -53,40 +53,6 @@ on post-fs-data
     chmod 0660 /dev/spm
     chown system system /dev/spm
 
-on init
-    # Refer to http://source.android.com/devices/tech/storage/index.html
-    # It said, "Starting in Android 4.4, multiple external storage devices are surfaced to developers through
-    #           Context.getExternalFilesDirs(), Context.getExternalCacheDirs(), and Context.getObbDirs().
-    #           External storage devices surfaced through these APIs must be a semi-permanent part of the device (such as an SD card slot in a battery compartment).
-    #           Developers expect data stored in these locations to be available over long periods of time."
-    # Therefore, if the target doesn't support sd hot-plugging (Ex: the SD card slot in a battery compartment), we need to export SECONDARY_STORAGE in 'boot' section
-    #
-    # export SECONDARY_STORAGE /storage/sdcard1
-# MIUI ADD: Performance_SpeedUI
-    write /dev/cpuset/ui/cpus 6-7
-# END Performance_SpeedUI
-
-service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/usbotg /storage/usbotg
-    class late_start
-    disabled
-# start mmstat
-on property:sys.boot_completed=1
-    mkdir /sys/kernel/tracing/instances/mmstat 711
-    write /sys/kernel/tracing/instances/mmstat/tracing_on 0
-    write /sys/kernel/tracing/instances/mmstat/buffer_size_kb 16
-    write /sys/kernel/tracing/instances/mmstat/events/mmstat/enable 1
-    write /sys/kernel/tracing/instances/mmstat/tracing_on 1
-    
-service vendor_tcpdump /vendor/bin/tcpdump-vendor -i any -W 3 -C 5 -s 134 -w /data/vendor/wlan_logs/tcpdump.pcap
-       class main
-       user root
-       group root wifi
-       disabled
-       oneshot
-
-on property:sys.user.0.ce_available=true
-    start vendor_tcpdump
-
 #Display feature sysfs node
 on boot
     chown system system /sys/class/mi_display/disp-DSI-0/disp_param
@@ -108,21 +74,3 @@ on boot
     chown system system /sys/class/mi_display/disp-DSI-0/max_brightness_clone
     chmod 0664 /sys/class/mi_display/disp-DSI-0/max_brightness_clone
 
-service ram_sh /vendor/bin/init.ram.sh
-    class main
-    user root
-    group root system
-    disabled
-    oneshot
-
-on property:sys.boot_completed=1
-    start ram_sh
-
-on init
-    insmod /vendor/lib/modules/millet_core.ko
-    insmod /vendor/lib/modules/binder_gki.ko
-    insmod /vendor/lib/modules/millet_binder.ko
-    insmod /vendor/lib/modules/millet_hs.ko
-    insmod /vendor/lib/modules/millet_pkg.ko
-    insmod /vendor/lib/modules/millet_sig.ko
-    insmod /vendor/lib/modules/millet_oem_cgroup.ko
